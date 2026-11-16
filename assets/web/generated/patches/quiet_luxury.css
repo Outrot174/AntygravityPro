@@ -18,9 +18,14 @@
   --ag-font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   --ag-font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --ag-blur-filter: blur(24px);
-  --agy-vvh: calc(100dvh - 48px) !important;
-  --vh: calc(100dvh - 48px) !important;
-  --app-height: calc(100dvh - 48px) !important;
+  --agy-vvh: calc(100dvh - var(--ag-taskbar-height, 48px)) !important;
+  --vh: calc(100dvh - var(--ag-taskbar-height, 48px)) !important;
+  --app-height: calc(100dvh - var(--ag-taskbar-height, 48px)) !important;
+  --ag-available-height: calc(100dvh - var(--ag-taskbar-height, 48px)) !important;
+  --radix-popper-available-height: calc(100dvh - var(--ag-taskbar-height, 48px)) !important;
+  --radix-popover-content-available-height: calc(100dvh - var(--ag-taskbar-height, 48px)) !important;
+  --radix-dropdown-menu-content-available-height: calc(100dvh - var(--ag-taskbar-height, 48px)) !important;
+  --radix-select-content-available-height: calc(100dvh - var(--ag-taskbar-height, 48px)) !important;
 }
 
 /* Global Reset */
@@ -50,10 +55,10 @@ html, body {
   top: 0 !important;
   left: 0 !important;
   right: 0 !important;
-  bottom: 48px !important;
+  bottom: var(--ag-taskbar-height, 48px) !important;
   width: 100vw !important;
-  height: calc(100dvh - 48px) !important;
-  max-height: calc(100dvh - 48px) !important;
+  height: calc(100dvh - var(--ag-taskbar-height, 48px)) !important;
+  max-height: calc(100dvh - var(--ag-taskbar-height, 48px)) !important;
   box-sizing: border-box !important;
   padding: 0 !important;
   margin: 0 !important;
@@ -92,10 +97,13 @@ html, body {
    ========================================================================== */
 #agDesktopCanvas {
   position: fixed !important;
-  inset: 0 !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: var(--ag-taskbar-height, 48px) !important;
   width: 100vw !important;
-  height: 100vh !important;
-  height: 100dvh !important;
+  height: calc(100dvh - var(--ag-taskbar-height, 48px)) !important;
+  max-height: calc(100dvh - var(--ag-taskbar-height, 48px)) !important;
   background: transparent !important;
   pointer-events: none !important;
   z-index: 100 !important;
@@ -280,8 +288,8 @@ html, body {
   bottom: 0 !important;
   width: 100% !important;
   height: var(--ag-taskbar-height, 48px) !important;
-  min-height: 48px !important;
-  max-height: 48px !important;
+  min-height: var(--ag-taskbar-height, 48px) !important;
+  max-height: var(--ag-taskbar-height, 48px) !important;
   background: rgba(14, 16, 20, 0.96) !important;
   backdrop-filter: var(--ag-blur-filter) !important;
   -webkit-backdrop-filter: var(--ag-blur-filter) !important;
@@ -296,7 +304,7 @@ html, body {
   overflow-y: hidden !important;
   -webkit-overflow-scrolling: touch !important;
   scrollbar-width: none !important;
-  z-index: 99999 !important;
+  z-index: 500 !important;
   pointer-events: auto !important;
   user-select: none !important;
   -webkit-user-select: none !important;
@@ -304,6 +312,48 @@ html, body {
 
 #agDesktopTaskbar::-webkit-scrollbar {
   display: none !important;
+}
+
+/* ==========================================================================
+   4.1. GLOBAL TASKBAR-AWARE OVERLAYS, DRAWERS & POPUPS
+   ========================================================================== */
+
+/* Mobile Bottom Sheets & Drawers (Settings, Model Select, Project Select, Actions) */
+div.fixed.inset-0.flex.items-end,
+[data-vaul-drawer-wrapper],
+[data-vaul-overlay] ~ div[fixed],
+body > div:has(.aux-drawer-popup) {
+  bottom: var(--ag-taskbar-height, 48px) !important;
+  height: calc(100dvh - var(--ag-taskbar-height, 48px)) !important;
+  max-height: calc(100dvh - var(--ag-taskbar-height, 48px)) !important;
+  box-sizing: border-box !important;
+  z-index: 6000 !important;
+}
+
+.aux-drawer-popup {
+  max-height: calc(100dvh - var(--ag-taskbar-height, 48px) - 16px) !important;
+  box-sizing: border-box !important;
+}
+
+/* Floating UI, Dropdown Menus, Popovers, Selects & Context Menus */
+[data-radix-popper-content-wrapper],
+[data-radix-menu-content],
+[data-radix-dropdown-menu-content],
+[data-radix-select-content],
+[data-radix-popover-content],
+[role="menu"],
+[role="listbox"],
+.ag-context-menu {
+  z-index: 10000 !important;
+  max-height: calc(100dvh - var(--ag-taskbar-height, 48px) - 16px) !important;
+  box-sizing: border-box !important;
+}
+
+/* Dialogs, Alert Dialogs & Fullscreen Modals */
+[role="dialog"]:not(.aux-drawer-popup),
+[role="alertdialog"],
+.ag-modal-overlay {
+  z-index: 20000 !important;
 }
 
 .ag-taskbar-btn {

@@ -158,7 +158,7 @@
             let nextY = initY + dy;
 
             const maxX = window.innerWidth - 60;
-            const maxY = window.innerHeight - 80;
+            const maxY = window.innerHeight - 48 - 38;
             nextX = Math.max(-this.width + 80, Math.min(maxX, nextX));
             nextY = Math.max(0, Math.min(maxY, nextY));
 
@@ -311,7 +311,7 @@
         this.element.style.left = '0px';
         this.element.style.top = '0px';
         this.element.style.width = '100vw';
-        this.element.style.height = 'calc(100dvh - 52px)';
+        this.element.style.height = 'calc(100dvh - var(--ag-taskbar-height, 48px))';
         this.element.style.borderRadius = '0';
         this.isMaximized = true;
       } else {
@@ -443,8 +443,14 @@
 
       const win = this.windows.get(id);
       win.element.classList.add('ag-focused');
+      if (this.topZ >= 480) {
+        this.topZ = 102;
+        Array.from(this.windows.values()).forEach((w, idx) => {
+          w.element.style.zIndex = 102 + (idx * 2);
+        });
+      }
       this.topZ += 2;
-      win.element.style.zIndex = win.isPinned ? this.topZ + 1000 : this.topZ;
+      win.element.style.zIndex = win.isPinned ? 495 : this.topZ;
       this.focusedWindowId = id;
       this._updateTaskbarApps();
     }

@@ -29,6 +29,12 @@ function installViewport(global, doc) {
         doc.documentElement.style.setProperty('--agy-vvh', effective + 'px');
         doc.documentElement.style.setProperty('--vh', effective + 'px');
         doc.documentElement.style.setProperty('--app-height', effective + 'px');
+        doc.documentElement.style.setProperty('--ag-taskbar-height', '48px');
+        doc.documentElement.style.setProperty('--ag-available-height', effective + 'px');
+        doc.documentElement.style.setProperty('--radix-popper-available-height', effective + 'px');
+        doc.documentElement.style.setProperty('--radix-popover-content-available-height', effective + 'px');
+        doc.documentElement.style.setProperty('--radix-dropdown-menu-content-available-height', effective + 'px');
+        doc.documentElement.style.setProperty('--radix-select-content-available-height', effective + 'px');
       }
       if (global.scrollTo) {
         global.scrollTo(0, 0);
@@ -46,6 +52,81 @@ function installViewport(global, doc) {
     }, { passive: true });
 
     updateVvh();
+  } catch (e) {}
+}
+
+/**
+ * patches/web_optimizations/popup_guard.js - Bulletproof collision guard for popups & menus.
+ * Repositions upward any popovers, select menus, dropdowns, and context menus
+ * whose bounds intersect the bottom 48px Taskbar boundary or keyboard viewport.
+ */
+function installPopupGuard(global, doc) {
+  try {
+    var POPUP_SELECTOR = [
+      '[data-radix-popper-content-wrapper]',
+      '[data-radix-menu-content]',
+      '[data-radix-dropdown-menu-content]',
+      '[data-radix-select-content]',
+      '[data-radix-popover-content]',
+      '[role="menu"]',
+      '[role="listbox"]',
+      '.ag-context-menu'
+    ].join(',');
+
+    function sanitizePopups() {
+      var vv = global.visualViewport;
+      var vh = (vv && vv.height) ? vv.height : (global.innerHeight || 0);
+      var maxBottom = vh - 48 - 4; // 4px safe margin above taskbar
+      if (maxBottom <= 100) return;
+
+      var popups = doc.querySelectorAll(POPUP_SELECTOR);
+      for (var i = 0; i < popups.length; i++) {
+        var el = popups[i];
+        if (el.dataset.agGuarded === 'true') continue;
+        var r = el.getBoundingClientRect();
+        if (r.height === 0 || r.width === 0) continue;
+
+        if (r.bottom > maxBottom) {
+          var overflow = r.bottom - maxBottom;
+          var curTop = parseFloat(el.style.top);
+          if (isNaN(curTop)) {
+            curTop = r.top;
+          }
+          var newTop = Math.max(12, curTop - overflow);
+          el.style.top = newTop + 'px';
+          el.style.maxHeight = (maxBottom - 16) + 'px';
+          el.style.overflowY = 'auto';
+          el.style.webkitOverflowScrolling = 'touch';
+          el.dataset.agGuarded = 'true';
+        }
+      }
+    }
+
+    var debounceTimer = null;
+    function scheduleSanitize() {
+      if (debounceTimer) cancelAnimationFrame(debounceTimer);
+      debounceTimer = requestAnimationFrame(sanitizePopups);
+    }
+
+    var observer = new MutationObserver(function (mutations) {
+      for (var i = 0; i < mutations.length; i++) {
+        if (mutations[i].addedNodes.length > 0) {
+          scheduleSanitize();
+          break;
+        }
+      }
+    });
+
+    observer.observe(doc.body || doc.documentElement, {
+      childList: true,
+      subtree: true
+    });
+
+    if (global.visualViewport) {
+      global.visualViewport.addEventListener('resize', scheduleSanitize, { passive: true });
+    }
+    global.addEventListener('resize', scheduleSanitize, { passive: true });
+    global.addEventListener('scroll', scheduleSanitize, { passive: true, capture: true });
   } catch (e) {}
 }
 
@@ -83,6 +164,7 @@ if (!doc) return;
 
 installTaps(doc);
 installViewport(global, doc);
+installPopupGuard(global, doc);
 installGpu(doc);
 
 global.__agWebOptimizations = { installed: true };
