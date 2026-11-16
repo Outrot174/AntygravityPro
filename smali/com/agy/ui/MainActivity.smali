@@ -1273,6 +1273,12 @@
     .line 147
     invoke-virtual {v0, p0}, Lcom/agy/bridge/AndroidBridge;->setActivity(Lcom/agy/ui/MainActivity;)V
 
+    invoke-static {}, Lcom/agy/browser/NativeBrowserManager;->getInstance()Lcom/agy/browser/NativeBrowserManager;
+
+    move-result-object v1
+
+    invoke-virtual {v1, p0}, Lcom/agy/browser/NativeBrowserManager;->setActivity(Landroid/app/Activity;)V
+
     .line 148
     new-instance p1, Lcom/agy/ui/webview/WebViewHost;
 

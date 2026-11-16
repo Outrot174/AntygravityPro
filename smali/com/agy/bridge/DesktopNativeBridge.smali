@@ -826,3 +826,129 @@
 
     return v0
 .end method
+
+.method public closeNativeBrowser()V
+  .annotation runtime Landroid/webkit/JavascriptInterface;
+  .end annotation
+  .registers 2
+    invoke-static { }, Lcom/agy/browser/NativeBrowserManager;->getInstance()Lcom/agy/browser/NativeBrowserManager;
+    move-result-object v0
+    invoke-virtual { v0 }, Lcom/agy/browser/NativeBrowserManager;->close()V
+    return-void
+.end method
+
+.method public getNativeBrowserTitle()Ljava/lang/String;
+  .annotation runtime Landroid/webkit/JavascriptInterface;
+  .end annotation
+  .registers 2
+    invoke-static { }, Lcom/agy/browser/NativeBrowserManager;->getInstance()Lcom/agy/browser/NativeBrowserManager;
+    move-result-object v0
+    invoke-virtual { v0 }, Lcom/agy/browser/NativeBrowserManager;->getTitle()Ljava/lang/String;
+    move-result-object v0
+    return-object v0
+.end method
+
+.method public getNativeBrowserUrl()Ljava/lang/String;
+  .annotation runtime Landroid/webkit/JavascriptInterface;
+  .end annotation
+  .registers 2
+    invoke-static { }, Lcom/agy/browser/NativeBrowserManager;->getInstance()Lcom/agy/browser/NativeBrowserManager;
+    move-result-object v0
+    invoke-virtual { v0 }, Lcom/agy/browser/NativeBrowserManager;->getUrl()Ljava/lang/String;
+    move-result-object v0
+    return-object v0
+.end method
+
+.method public isNativeBrowserSupported()Z
+  .annotation runtime Landroid/webkit/JavascriptInterface;
+  .end annotation
+  .registers 2
+    const/4 v0, 1
+    return v0
+.end method
+
+.method public nativeBrowserGoBack()V
+  .annotation runtime Landroid/webkit/JavascriptInterface;
+  .end annotation
+  .registers 2
+    invoke-static { }, Lcom/agy/browser/NativeBrowserManager;->getInstance()Lcom/agy/browser/NativeBrowserManager;
+    move-result-object v0
+    invoke-virtual { v0 }, Lcom/agy/browser/NativeBrowserManager;->goBack()V
+    return-void
+.end method
+
+.method public nativeBrowserGoForward()V
+  .annotation runtime Landroid/webkit/JavascriptInterface;
+  .end annotation
+  .registers 2
+    invoke-static { }, Lcom/agy/browser/NativeBrowserManager;->getInstance()Lcom/agy/browser/NativeBrowserManager;
+    move-result-object v0
+    invoke-virtual { v0 }, Lcom/agy/browser/NativeBrowserManager;->goForward()V
+    return-void
+.end method
+
+.method public nativeBrowserNavigate(Ljava/lang/String;)V
+  .annotation runtime Landroid/webkit/JavascriptInterface;
+  .end annotation
+  .registers 3
+    invoke-static { }, Lcom/agy/browser/NativeBrowserManager;->getInstance()Lcom/agy/browser/NativeBrowserManager;
+    move-result-object v0
+    invoke-virtual { v0, p1 }, Lcom/agy/browser/NativeBrowserManager;->navigate(Ljava/lang/String;)V
+    return-void
+.end method
+
+.method public nativeBrowserReload()V
+  .annotation runtime Landroid/webkit/JavascriptInterface;
+  .end annotation
+  .registers 2
+    invoke-static { }, Lcom/agy/browser/NativeBrowserManager;->getInstance()Lcom/agy/browser/NativeBrowserManager;
+    move-result-object v0
+    invoke-virtual { v0 }, Lcom/agy/browser/NativeBrowserManager;->reload()V
+    return-void
+.end method
+
+.method public nativeBrowserStop()V
+  .annotation runtime Landroid/webkit/JavascriptInterface;
+  .end annotation
+  .registers 2
+    invoke-static { }, Lcom/agy/browser/NativeBrowserManager;->getInstance()Lcom/agy/browser/NativeBrowserManager;
+    move-result-object v0
+    invoke-virtual { v0 }, Lcom/agy/browser/NativeBrowserManager;->stopLoading()V
+    return-void
+.end method
+
+.method public openNativeBrowser(Ljava/lang/String;FFFF)V
+  .annotation runtime Landroid/webkit/JavascriptInterface;
+  .end annotation
+  .registers 12
+    invoke-static { }, Lcom/agy/browser/NativeBrowserManager;->getInstance()Lcom/agy/browser/NativeBrowserManager;
+    move-result-object v0
+    move-object v1, p1
+    move v2, p2
+    move v3, p3
+    move v4, p4
+    move v5, p5
+    invoke-virtual/range { v0 .. v5 }, Lcom/agy/browser/NativeBrowserManager;->open(Ljava/lang/String;FFFF)V
+    return-void
+.end method
+
+.method public setNativeBrowserBounds(FFFF)V
+  .annotation runtime Landroid/webkit/JavascriptInterface;
+  .end annotation
+  .registers 6
+    invoke-static { }, Lcom/agy/browser/NativeBrowserManager;->getInstance()Lcom/agy/browser/NativeBrowserManager;
+    move-result-object v0
+    invoke-virtual { v0, p1, p2, p3, p4 }, Lcom/agy/browser/NativeBrowserManager;->setBounds(FFFF)V
+    return-void
+.end method
+
+.method public setNativeBrowserVisible(Z)V
+  .annotation runtime Landroid/webkit/JavascriptInterface;
+  .end annotation
+  .registers 3
+    invoke-static { }, Lcom/agy/browser/NativeBrowserManager;->getInstance()Lcom/agy/browser/NativeBrowserManager;
+    move-result-object v0
+    invoke-virtual { v0, p1 }, Lcom/agy/browser/NativeBrowserManager;->setVisible(Z)V
+    return-void
+.end method
+
