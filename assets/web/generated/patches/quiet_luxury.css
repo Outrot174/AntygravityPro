@@ -93,6 +93,59 @@ html, body {
 }
 
 /* ==========================================================================
+   CONVERSATION VIEW & CHAT DOCKING STABILITY
+   ========================================================================== */
+/* Обеспечиваем строгое вертикальное разделение: шапка -> скроллируемые сообщения -> прижатое поле ввода */
+div[data-testid="conversation-view"] {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+  max-height: 100% !important;
+  min-height: 0 !important;
+  overflow: hidden !important;
+  justify-content: space-between !important;
+}
+
+/* Шапка диалога фиксирована по высоте */
+div[data-testid="conversation-view"] > div:first-child,
+div[data-testid="conversation-view"] header,
+div[data-testid="conversation-view"] [class*="border-b"] {
+  flex-shrink: 0 !important;
+}
+
+/* Принудительно растягиваем контейнер сообщений на всё доступное пространство между шапкой и вводом */
+div[data-testid="conversation-view"] > [class*="self-stretch"],
+div[data-testid="conversation-view"] [class*="flex-grow"],
+div[data-testid="conversation-view"] [class*="grow"],
+div[data-testid="conversation-view"] [data-testid="autoscroll-viewport"],
+div[data-testid="conversation-view"] [data-testid="autoscroll-viewport"] > div {
+  flex: 1 1 0% !important;
+  flex-grow: 1 !important;
+  flex-shrink: 1 !important;
+  min-height: 0 !important;
+  height: 100% !important;
+  max-height: 100% !important;
+  width: 100% !important;
+}
+
+/* Скролл сообщений внутри вьюпорта */
+div[data-testid="conversation-view"] [data-testid="autoscroll-viewport"] {
+  overflow-y: auto !important;
+  -webkit-overflow-scrolling: touch !important;
+}
+
+/* Поле ввода ВСЕГДА жестко прижато к нижнему краю диалога над таскбаром */
+div[data-testid="conversation-view"] > div:last-child,
+div[data-testid="conversation-view"] > div:last-of-type,
+div[data-testid="conversation-view"] .relative.w-full.px-4.pb-2,
+div[data-testid="conversation-view"] [class*="px-4"][class*="pb-2"] {
+  margin-top: auto !important;
+  flex-shrink: 0 !important;
+  width: 100% !important;
+  z-index: 20 !important;
+}
+
+/* ==========================================================================
    2. DESKTOP CANVAS HOST (Transparent Overlayer for Floating Windows)
    ========================================================================== */
 #agDesktopCanvas {
