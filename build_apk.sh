@@ -16,7 +16,7 @@ if [ -f "assets/runtime/bin/liblanguage_server.so.gz" ]; then
 fi
 
 echo "=== [2/5] Сборка APK через Apktool ==="
-rm -f app-unsigned.apk AntigravityPro_aligned.apk AntigravityPro_Parallel.apk
+rm -f app-unsigned.apk AntigravityPro_aligned.apk AntigravityPro.apk
 apktool b . -o app-unsigned.apk
 
 echo "=== [3/5] Выравнивание (zipalign 4-byte) ==="
@@ -32,8 +32,8 @@ if [ ! -f "$KEYSTORE" ]; then
     fi
 fi
 
-apksigner sign --ks "$KEYSTORE" --ks-pass pass:android --key-pass pass:android --out AntigravityPro_Parallel.apk AntigravityPro_aligned.apk
+apksigner sign --ks "$KEYSTORE" --ks-pass pass:android --key-pass pass:android --out AntigravityPro.apk AntigravityPro_aligned.apk
 
 echo "=== [5/5] Проверка подписи ==="
-apksigner verify AntigravityPro_Parallel.apk
-echo "Готово! Собранный подписанный пакет: $PWD/AntigravityPro_Parallel.apk"
+apksigner verify AntigravityPro.apk
+echo "Готово! Собранный подписанный пакет: $PWD/AntigravityPro.apk"

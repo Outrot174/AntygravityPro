@@ -92,7 +92,7 @@ AntygravityPro/
    - Собирает APK через `Apktool`.
    - Выравнивает архив по 4-байтовой границе (`zipalign`).
    - Подписывает APK (`apksigner`).
-   - Выгружает готовый артефакт **`AntigravityPro_Parallel.apk`** в раздел Actions Artifacts или создает официальный GitHub Release.
+    - Выгружает готовый артефакт **`AntigravityPro.apk`** в раздел Actions Artifacts или создает официальный GitHub Release.
 2. Ручной запуск доступен через вкладку **Actions → Run workflow**.
 
 ---
@@ -118,10 +118,10 @@ apktool b . -o app-unsigned.apk
 zipalign -p -f 4 app-unsigned.apk AntigravityPro_aligned.apk
 
 # 4. Подпись APK
-apksigner sign --ks debug.keystore --ks-pass pass:android --key-pass pass:android --out AntigravityPro_Parallel.apk AntigravityPro_aligned.apk
+apksigner sign --ks debug.keystore --ks-pass pass:android --key-pass pass:android --out AntigravityPro.apk AntigravityPro_aligned.apk
 
 # 5. Проверка подписи
-apksigner verify AntigravityPro_Parallel.apk
+apksigner verify AntigravityPro.apk
 ```
 
 ---
@@ -131,7 +131,7 @@ apksigner verify AntigravityPro_Parallel.apk
 Установка параллельного пакета на устройство через ADB:
 
 ```bash
-adb install -r AntigravityPro_Parallel.apk
+adb install -r AntigravityPro.apk
 ```
 
 Приложение устанавливается параллельно с базовым `com.agy` под идентификатором `com.agy.pro` и не конфликтует с существующими версиями.

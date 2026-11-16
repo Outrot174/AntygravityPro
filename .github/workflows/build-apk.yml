@@ -79,18 +79,18 @@ jobs:
             --ks debug.keystore \
             --ks-pass pass:android \
             --key-pass pass:android \
-            --out AntigravityPro_Parallel.apk \
+            --out AntigravityPro.apk \
             AntigravityPro_aligned.apk
 
-          "$APKSIGNER_BIN" verify AntigravityPro_Parallel.apk
-          echo "Successfully assembled & signed AntigravityPro_Parallel.apk"
-          ls -lh AntigravityPro_Parallel.apk
+          "$APKSIGNER_BIN" verify AntigravityPro.apk
+          echo "Successfully assembled & signed AntigravityPro.apk"
+          ls -lh AntigravityPro.apk
 
       - name: Upload APK as Workflow Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: AntigravityPro_Parallel
-          path: AntigravityPro_Parallel.apk
+          name: AntigravityPro
+          path: AntigravityPro.apk
           if-no-files-found: error
           retention-days: 30
 
@@ -98,7 +98,7 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/')
         uses: softprops/action-gh-release@v2
         with:
-          files: AntigravityPro_Parallel.apk
+          files: AntigravityPro.apk
           name: Release ${{ github.ref_name }}
           draft: false
           prerelease: false
