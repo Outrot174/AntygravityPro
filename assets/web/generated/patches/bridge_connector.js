@@ -51,10 +51,30 @@
         }
       }
 
-      // 2. Gateway JSON-RPC fallback (ports 45175, 45158, 45160)
-      const ports = [this.gatewayPort, 45158, 45160];
+      // 2. Gateway HTTP fallback (ports 45160, 45162, 45164, 45175, 45158)
+      const ports = [45160, 45162, 45164, this.gatewayPort, 45158];
       for (const p of ports) {
         try {
+          // A. Standard AGY SystemGatewayServer protocol (/gateway)
+          const resp = await fetch(`http://127.0.0.1:${p}/gateway`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ command: 'exec', payload: { cmd: cmd } })
+          });
+          if (resp.ok) {
+            const data = await resp.json();
+            if (data && data.stdout !== undefined) {
+              const out = data.stdout + (data.stderr ? ('\n' + data.stderr) : '');
+              return out.trim();
+            }
+            if (data && (data.output || data.result)) {
+              return String(data.output || data.result).trim();
+            }
+          }
+        } catch (_) {}
+
+        try {
+          // B. JSON-RPC fallback (/api)
           const resp = await fetch(`http://127.0.0.1:${p}/api`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },

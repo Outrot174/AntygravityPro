@@ -100,21 +100,41 @@
     new-instance v4, Ljava/lang/StringBuilder;
     invoke-direct { v4 }, Ljava/lang/StringBuilder;-><init>()V
     invoke-virtual { v4, v2 }, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-    move-result-object v2
-    const-string v4, "/bin:/system/bin:/system/xbin"
-    invoke-virtual { v2, v4 }, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-    move-result-object v2
-    invoke-virtual { v2 }, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-    move-result-object v2
-    invoke-interface { p1, v3, v2 }, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    move-result-object v4
+    const-string v5, "/bin:/system/bin:/system/xbin"
+    invoke-virtual { v4, v5 }, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v4
+    invoke-virtual { v4 }, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v4
+    invoke-interface { p1, v3, v4 }, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
   .line 31
-    const-string v2, "TMPDIR"
-    const-string v3, "/data/local/tmp"
-    invoke-interface { p1, v2, v3 }, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    const-string v3, "LD_LIBRARY_PATH"
+    new-instance v4, Ljava/lang/StringBuilder;
+    invoke-direct { v4 }, Ljava/lang/StringBuilder;-><init>()V
+    invoke-virtual { v4, v2 }, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v4
+    const-string v5, "/lib:/data/user/0/com.agy.pro/files/runtime/lib:/system/lib64"
+    invoke-virtual { v4, v5 }, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v4
+    invoke-virtual { v4 }, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v4
+    invoke-interface { p1, v3, v4 }, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
   .line 32
-    const-string v2, "LANG"
-    const-string v3, "en_US.UTF-8"
-    invoke-interface { p1, v2, v3 }, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    const-string v3, "TMPDIR"
+    new-instance v4, Ljava/lang/StringBuilder;
+    invoke-direct { v4 }, Ljava/lang/StringBuilder;-><init>()V
+    invoke-virtual { v4, v2 }, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v4
+    const-string v5, "/tmp"
+    invoke-virtual { v4, v5 }, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v4
+    invoke-virtual { v4 }, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v4
+    invoke-interface { p1, v3, v4 }, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  .line 33
+    const-string v3, "LANG"
+    const-string v4, "en_US.UTF-8"
+    invoke-interface { p1, v3, v4 }, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
   .line 34
     invoke-virtual { v1 }, Ljava/lang/ProcessBuilder;->start()Ljava/lang/Process;
     move-result-object p1
