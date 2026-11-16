@@ -205,6 +205,13 @@ html, body {
   pointer-events: none !important;
 }
 
+.ag-file-entry.ag-dragging {
+  opacity: 0.45 !important;
+  background: rgba(59, 130, 246, 0.15) !important;
+  border-color: #3b82f6 !important;
+}
+
+
 /* Window Header Bar (38px strict) */
 .ag-win-header {
   height: 38px;

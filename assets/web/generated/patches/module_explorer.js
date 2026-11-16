@@ -456,19 +456,121 @@
               window.UnifiedDragDropBus.insertPathToChatInput(fullPath, item.name);
             }
           };
+          chatBtn.onpointerdown = (e) => e.stopPropagation();
         }
 
-        // More options button
+        // Three-dots menu button (Меню трех точек — СОХРАНЕНО)
         const moreBtn = entry.querySelector('.ag-file-more-btn');
         if (moreBtn) {
           moreBtn.onclick = (e) => {
             e.stopPropagation();
             this.openContextMenu(e, item, fullPath);
           };
+          moreBtn.onpointerdown = (e) => e.stopPropagation();
         }
 
-        // Entry Click Handling
+        // ====================================================================
+        // Drag & Drop into Chat (Pointer & Touch Engine)
+        // ====================================================================
+        entry.setAttribute('draggable', 'true');
+
+        let isDragging = false;
+        let dragTimer = null;
+        let startX = 0;
+        let startY = 0;
+        let moved = false;
+
+        const onPointerDown = (e) => {
+          if (this.selectMode || e.button === 2) return;
+          startX = e.clientX;
+          startY = e.clientY;
+          moved = false;
+          isDragging = false;
+
+          // Drag timer: if user holds for 150ms or moves, start drag into Chat
+          dragTimer = setTimeout(() => {
+            if (window.UnifiedDragDropBus) {
+              isDragging = true;
+              entry.classList.add('ag-dragging');
+              const winEl = this.windowInstance ? this.windowInstance.element : null;
+              window.UnifiedDragDropBus.startDrag({
+                path: fullPath,
+                name: item.name,
+                size: item.size,
+                isDir: item.isDir
+              }, winEl, e);
+            }
+          }, 150);
+        };
+
+        const onPointerMove = (e) => {
+          if (!dragTimer && !isDragging) return;
+          const dist = Math.hypot(e.clientX - startX, e.clientY - startY);
+          if (dist > 8) {
+            moved = true;
+            if (!isDragging && window.UnifiedDragDropBus) {
+              if (dragTimer) {
+                clearTimeout(dragTimer);
+                dragTimer = null;
+              }
+              isDragging = true;
+              entry.classList.add('ag-dragging');
+              const winEl = this.windowInstance ? this.windowInstance.element : null;
+              window.UnifiedDragDropBus.startDrag({
+                path: fullPath,
+                name: item.name,
+                size: item.size,
+                isDir: item.isDir
+              }, winEl, e);
+            }
+          }
+        };
+
+        const onPointerEnd = () => {
+          if (dragTimer) {
+            clearTimeout(dragTimer);
+            dragTimer = null;
+          }
+          if (isDragging) {
+            setTimeout(() => {
+              isDragging = false;
+              moved = false;
+            }, 60);
+          }
+        };
+
+        entry.addEventListener('pointerdown', onPointerDown, { passive: true });
+        entry.addEventListener('pointermove', onPointerMove, { passive: true });
+        entry.addEventListener('pointerup', onPointerEnd, { passive: true });
+        entry.addEventListener('pointercancel', onPointerEnd, { passive: true });
+
+        // HTML5 Drag support (mouse / trackpad)
+        entry.addEventListener('dragstart', (e) => {
+          if (this.selectMode) { e.preventDefault(); return; }
+          e.dataTransfer.setData('text/plain', `@${fullPath} `);
+          e.dataTransfer.setData('application/x-antigravity-path', fullPath);
+          e.dataTransfer.effectAllowed = 'copy';
+          if (window.UnifiedDragDropBus) {
+            const winEl = this.windowInstance ? this.windowInstance.element : null;
+            window.UnifiedDragDropBus.startDrag({
+              path: fullPath,
+              name: item.name,
+              size: item.size,
+              isDir: item.isDir
+            }, winEl, e);
+          }
+        });
+
+        // Right-click context menu (Меню трех точек)
+        entry.oncontextmenu = (e) => {
+          e.preventDefault();
+          this.openContextMenu(e, item, fullPath);
+        };
+
+        // Entry Click Handling (only if not dragged or moved)
         entry.onclick = (e) => {
+          if (moved || isDragging) return;
+
           if (this.selectMode) {
             this.toggleSelectItem(fullPath);
             return;
@@ -480,18 +582,6 @@
             this.openFile(fullPath, item.name);
           }
         };
-
-        // Long-Press on Mobile Touch for Context Menu
-        let pressTimer = null;
-        entry.addEventListener('pointerdown', (e) => {
-          pressTimer = setTimeout(() => {
-            this.openContextMenu(e, item, fullPath);
-          }, 450);
-        }, { passive: true });
-
-        const cancelPress = () => { if (pressTimer) clearTimeout(pressTimer); };
-        entry.addEventListener('pointerup', cancelPress);
-        entry.addEventListener('pointercancel', cancelPress);
 
         this.fileListEl.appendChild(entry);
       });

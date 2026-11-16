@@ -234,7 +234,37 @@
           }
         } else if (targetInput.getAttribute('contenteditable') === 'true') {
           targetInput.focus();
-          document.execCommand('insertText', false, tag);
+          try {
+            const sel = window.getSelection();
+            const range = document.createRange();
+            range.selectNodeContents(targetInput);
+            range.collapse(false);
+            sel.removeAllRanges();
+            sel.addRange(range);
+          } catch (_) {}
+          try {
+            document.execCommand('insertText', false, tag);
+          } catch (e) {
+            try {
+              const dt = new DataTransfer();
+              dt.setData('text/plain', tag);
+              const pasteEv = new ClipboardEvent('paste', {
+                bubbles: true,
+                cancelable: true,
+                clipboardData: dt
+              });
+              targetInput.dispatchEvent(pasteEv);
+            } catch (_) {}
+          }
+          try {
+            const inputEv = new InputEvent('beforeinput', {
+              bubbles: true,
+              cancelable: true,
+              inputType: 'insertText',
+              data: tag
+            });
+            targetInput.dispatchEvent(inputEv);
+          } catch (_) {}
         }
         showSystemToast(`В чат добавлен: ${fileName || filePath.split('/').pop()}`);
       } else {

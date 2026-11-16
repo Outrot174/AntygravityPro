@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="ru">
   <head>
+    <base href="/" />
     <meta charset="UTF-8" />
     <title>Antigravity</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0" />
@@ -11,15 +12,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link rel="icon" type="image/png" href="./antigravity-icon.png" />
-    <link rel="stylesheet" href="./jetbox.css" />
-    <link rel="stylesheet" href="./compiled_tailwind.css" />
+    <link rel="icon" type="image/png" href="/antigravity-icon.png" />
+    <link rel="stylesheet" href="/jetbox.css" />
+    <link rel="stylesheet" href="/compiled_tailwind.css" />
 
     <!-- Boot fragments (generated from web/src/boot/**). -->
     <!-- Workaround for custom elements in overlay bundle -->
-    <script src="./generated/boot/custom-elements-guard.js"></script>
+    <script src="/generated/boot/custom-elements-guard.js"></script>
     <!-- Fast theme bootstrap: honors light/dark from ?hostTheme / __AG_HOST_THEME__. -->
-    <script src="./generated/boot/theme-bootstrap.js"></script>
+    <script src="/generated/boot/theme-bootstrap.js"></script>
 
     <!-- Fast Dark Theme Skeleton & Sleek Loading Screen Styles -->
     <style>
@@ -57,7 +58,7 @@
         height: 100%;
       }
       </style>
-    <link rel="stylesheet" href="./generated/patches/quiet_luxury.css" />
+    <link rel="stylesheet" href="/generated/patches/quiet_luxury.css" />
   </head>
   <body>
     <div id="root"></div>
@@ -72,23 +73,23 @@
       rewrite is the only transport shim now.
 
       startup_ready.js is injected natively by the Java agent; it is served from
-      ./generated/patches/startup_ready.js and intentionally absent here.
+      /generated/patches/startup_ready.js and intentionally absent here.
     -->
-    <script src="./generated/patches/web_optimizations.js"></script>
-    <script src="./generated/patches/touch_model_menu.js"></script>
-    <script src="./generated/patches/i18n_ru.js"></script>
-    <script src="./generated/patches/theme_sync.js"></script>
-    <script src="./generated/bridge.core.js"></script>
-    <script defer src="./prism_bundle.js"></script>
-    <script defer src="./generated/main.js"></script>
-    <script src="./generated/patches/bridge_connector.js"></script>
-    <script src="./generated/patches/drag_drop_bus.js"></script>
-    <script src="./generated/patches/window_manager.js"></script>
-    <script src="./generated/patches/module_chat.js"></script>
-    <script src="./generated/patches/module_explorer.js"></script>
-    <script src="./generated/patches/module_browser.js"></script>
-    <script src="./generated/patches/module_terminal.js"></script>
-    <script src="./generated/patches/module_vnc.js"></script>
-    <script src="./generated/patches/desktop_bootstrap.js"></script>
+    <script src="/generated/patches/web_optimizations.js"></script>
+    <script src="/generated/patches/touch_model_menu.js"></script>
+    <script src="/generated/patches/i18n_ru.js"></script>
+    <script src="/generated/patches/theme_sync.js"></script>
+    <script src="/generated/bridge.core.js"></script>
+    <script defer src="/prism_bundle.js"></script>
+    <script defer src="/generated/main.js"></script>
+    <script src="/generated/patches/bridge_connector.js"></script>
+    <script src="/generated/patches/drag_drop_bus.js"></script>
+    <script src="/generated/patches/window_manager.js"></script>
+    <script src="/generated/patches/module_chat.js"></script>
+    <script src="/generated/patches/module_explorer.js"></script>
+    <script src="/generated/patches/module_browser.js"></script>
+    <script src="/generated/patches/module_terminal.js"></script>
+    <script src="/generated/patches/module_vnc.js"></script>
+    <script src="/generated/patches/desktop_bootstrap.js"></script>
   </body>
 </html>
