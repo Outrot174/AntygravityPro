@@ -25,7 +25,7 @@
 
 ```bash
 # 1. Сборка APK через Apktool
-apktool -JDjava.io.tmpdir=/data/local/tmp b -o /storage/emulated/0/Antigravity/программы/AntigravityPro_unsigned.apk /storage/emulated/0/Antigravity/anty_decompiled
+apktool -JDjava.io.tmpdir=/data/local/tmp b -o /storage/emulated/0/Antigravity/программы/AntigravityPro_unsigned.apk /storage/emulated/0/Antigravity/программы/AntigravityPro
 
 # 2. Выравнивание 4-byte boundaries
 zipalign -f -p 4 /storage/emulated/0/Antigravity/программы/AntigravityPro_unsigned.apk /storage/emulated/0/Antigravity/программы/AntigravityPro_aligned.apk
