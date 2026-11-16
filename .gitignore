@@ -5,8 +5,13 @@ build/
 *.aligned.apk
 *.unsigned.apk
 
+# Large native binaries (>100MB blocked by GitHub) - tracked via .gz
+assets/runtime/bin/liblanguage_server.so
+!assets/runtime/bin/liblanguage_server.so.gz
+
 # Temporary files & caches
 *.tmp
 *.log
 .DS_Store
 Thumbs.db
+

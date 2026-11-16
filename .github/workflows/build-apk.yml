@@ -1,0 +1,107 @@
+name: Build & Package AntigravityPro APK
+
+on:
+  push:
+    branches: [ "main" ]
+    tags: [ "v*" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-apk:
+    name: Assemble & Sign APK
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+
+      - name: Set up Java JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Install Android Build Tools & Apktool
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y zipalign android-sdk-build-tools wget gzip
+          
+          # Install Apktool wrapper and JAR
+          echo "Installing Apktool..."
+          sudo wget -q https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool -O /usr/local/bin/apktool
+          sudo chmod +x /usr/local/bin/apktool
+          sudo wget -q https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.10.0.jar -O /usr/local/bin/apktool.jar
+          sudo chmod +x /usr/local/bin/apktool.jar
+          apktool -version
+
+      - name: Decompress Large Native Binaries
+        run: |
+          if [ -f "assets/runtime/bin/liblanguage_server.so.gz" ]; then
+            echo "Decompressing assets/runtime/bin/liblanguage_server.so.gz..."
+            gunzip -k -f assets/runtime/bin/liblanguage_server.so.gz
+            ls -lh assets/runtime/bin/liblanguage_server.so
+          fi
+
+      - name: Assemble APK with Apktool
+        run: |
+          echo "Building APK package..."
+          apktool b . -o app-unsigned.apk
+          ls -lh app-unsigned.apk
+
+      - name: Align APK (zipalign 4-byte)
+        run: |
+          echo "Aligning package..."
+          zipalign -v -p 4 app-unsigned.apk AntigravityPro_aligned.apk
+          ls -lh AntigravityPro_aligned.apk
+
+      - name: Sign APK (apksigner)
+        run: |
+          echo "Generating build keystore..."
+          keytool -genkeypair -v \
+            -keystore debug.keystore \
+            -storepass android \
+            -alias androiddebugkey \
+            -keypass android \
+            -keyalg RSA \
+            -keysize 2048 \
+            -validity 10000 \
+            -dname "CN=AntigravityPro,O=AGY,C=RU"
+
+          echo "Signing APK..."
+          # Locate apksigner in system or Android SDK
+          APKSIGNER_BIN=$(which apksigner || find /usr/lib/android-sdk/build-tools -name apksigner 2>/dev/null | head -n 1)
+          "$APKSIGNER_BIN" sign \
+            --ks debug.keystore \
+            --ks-pass pass:android \
+            --key-pass pass:android \
+            --out AntigravityPro_Parallel.apk \
+            AntigravityPro_aligned.apk
+
+          "$APKSIGNER_BIN" verify AntigravityPro_Parallel.apk
+          echo "Successfully assembled & signed AntigravityPro_Parallel.apk"
+          ls -lh AntigravityPro_Parallel.apk
+
+      - name: Upload APK as Workflow Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: AntigravityPro_Parallel
+          path: AntigravityPro_Parallel.apk
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Create GitHub Release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: AntigravityPro_Parallel.apk
+          name: Release ${{ github.ref_name }}
+          draft: false
+          prerelease: false
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
