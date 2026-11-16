@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final CSP:Ljava/lang/String; = "default-src \'self\' https: data: blob:; script-src \'self\' \'unsafe-inline\' \'unsafe-eval\' blob:; style-src \'self\' \'unsafe-inline\' https:; img-src \'self\' https: data: blob:; font-src \'self\' https: data:; connect-src \'self\' https: wss:; frame-src https: data: blob:; worker-src \'self\' blob:; object-src \'none\'; base-uri \'self\'"
+.field private static final CSP:Ljava/lang/String; = "default-src * 'unsafe-inline' 'unsafe-eval' data: blob:; script-src * 'unsafe-inline' 'unsafe-eval' blob:; style-src * 'unsafe-inline'; img-src * data: blob:; font-src * data:; connect-src *; frame-src * data: blob:; worker-src * blob:; object-src 'none'; base-uri 'self'"
 
 .field private static final READY_SCRIPT:Ljava/lang/String; = "./generated/patches/startup_ready.js"
 
@@ -69,7 +69,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "<meta http-equiv=\"Content-Security-Policy\" content=\"default-src \'self\' https: data: blob:; script-src \'self\' \'unsafe-inline\' \'unsafe-eval\' blob:; style-src \'self\' \'unsafe-inline\' https:; img-src \'self\' https: data: blob:; font-src \'self\' https: data:; connect-src \'self\' https: wss:; frame-src https: data: blob:; worker-src \'self\' blob:; object-src \'none\'; base-uri \'self\'\"><script>(function(){window.__APP_CONFIG__="
+    const-string v3, "<meta http-equiv=\"Content-Security-Policy\" content=\"default-src * \'unsafe-inline\' \'unsafe-eval\' data: blob:; script-src * \'unsafe-inline\' \'unsafe-eval\' blob:; style-src * \'unsafe-inline\'; img-src * data: blob:; font-src * data:; connect-src *; frame-src * data: blob:; worker-src * blob:; object-src \'none\'; base-uri \'self\'\"><script>(function(){window.__APP_CONFIG__="
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
