@@ -63,14 +63,14 @@
     .line 57
     const-string v2, "user"
 
-    const-string v3, "Outrot174"
+    const-string v3, "User"
 
     invoke-virtual {v1, v2, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     .line 58
     const-string v2, "role"
 
-    const-string v3, "Lead Architect"
+    const-string v3, "Developer"
 
     invoke-virtual {v1, v2, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
@@ -129,7 +129,7 @@
     invoke-virtual {v1, p1, v2, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
 
     .line 62
-    const-string p1, "Authenticated user Outrot174 via native bridge"
+    const-string p1, "Authenticated user via native bridge"
 
     invoke-static {v0, p1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -246,14 +246,14 @@
     .line 104
     const-string v1, "device"
 
-    const-string v2, "POCO F7 Ultra"
+    sget-object v2, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     .line 105
     const-string v1, "os"
 
-    const-string v2, "Xiaomi HyperOS 3.0"
+    sget-object v2, Landroid/os/Build$VERSION;->RELEASE:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
@@ -680,7 +680,7 @@
     .line 90
     const-string p1, "reply"
 
-    const-string v0, "\u0417\u0430\u043f\u0440\u043e\u0441 \u043f\u0440\u0438\u043d\u044f\u0442 \u043d\u0430\u0442\u0438\u0432\u043d\u044b\u043c \u044f\u0434\u0440\u043e\u043c Antigravity Bridge. \u041f\u0435\u0440\u0435\u0434\u0430\u043d\u043e \u0432 \u043a\u043e\u043d\u0442\u0443\u0440 \u043e\u0431\u0440\u0430\u0431\u043e\u0442\u043a\u0438 ARM64 HyperOS."
+    const-string v0, "\u0417\u0430\u043f\u0440\u043e\u0441 \u043f\u0440\u0438\u043d\u044f\u0442 \u043d\u0430\u0442\u0438\u0432\u043d\u044b\u043c \u044f\u0434\u0440\u043e\u043c Antigravity Bridge. \u041f\u0435\u0440\u0435\u0434\u0430\u043d\u043e \u0432 \u043a\u043e\u043d\u0442\u0443\u0440 \u043e\u0431\u0440\u0430\u0431\u043e\u0442\u043a\u0438 ARM64."
 
     invoke-virtual {v3, p1, v0}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 

@@ -14,4 +14,7 @@ assets/runtime/bin/liblanguage_server.so
 *.log
 .DS_Store
 Thumbs.db
+scratch/
+__pycache__/
+*.pyc
 

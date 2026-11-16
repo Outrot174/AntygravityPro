@@ -81,12 +81,12 @@
           </div>
         </div>
         <div class="ag-term-output" id="agTermOutput" style="flex:1; overflow-y:auto; line-height:1.45; white-space:pre-wrap; word-break:break-all; font-family:var(--ag-font-mono); font-size:11px;">
-<span style="color:#5a6275;">[Antigravity Linux Userspace Native Shell - POCO F7 Ultra SM8750]</span>
+<span style="color:#5a6275;">[Antigravity Linux Userspace Native Shell - ARM64]</span>
 <span style="color:#8e95a5;">Prefix: /data/user/0/com.agy.pro/files/usr/bin</span>
 <span style="color:#8e95a5;">Готов к вводу команд или перетаскиванию файлов из Проводника.</span>
 </div>
         <div style="display:flex; align-items:center; gap:6px; margin-top:6px; border-top:1px solid #1a1d24; padding-top:6px;">
-          <span style="color:#34d399; font-weight:600;">agy@poco:</span><span style="color:#60a5fa;" id="agTermPwdLabel">~/Antigravity</span><span style="color:#eceef2;">$</span>
+          <span style="color:#34d399; font-weight:600;">agy@android:</span><span style="color:#60a5fa;" id="agTermPwdLabel">~/Antigravity</span><span style="color:#eceef2;">$</span>
           <input type="text" id="agTermInput" autocomplete="off" spellcheck="false" style="flex:1; background:transparent; border:none; outline:none; color:#eceef2; font-family:var(--ag-font-mono); font-size:11px;" />
         </div>
       `;
@@ -180,7 +180,7 @@
     }
 
     async dispatchCommand(cmd) {
-      this.printLine(`\nagy@poco:${this._formatPwd(this.workingDir)}$ ${cmd}`);
+      this.printLine(`\nagy@android:${this._formatPwd(this.workingDir)}$ ${cmd}`);
 
       if (cmd === 'clear') {
         if (this.outputContainer) this.outputContainer.innerHTML = '';
