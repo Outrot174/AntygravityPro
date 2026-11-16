@@ -1,0 +1,12 @@
+# Build artifacts
+build/
+*.apk
+*.apk.idsig
+*.aligned.apk
+*.unsigned.apk
+
+# Temporary files & caches
+*.tmp
+*.log
+.DS_Store
+Thumbs.db

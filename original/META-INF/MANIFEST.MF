@@ -1,0 +1,1211 @@
+Manifest-Version: 1.0
+
+Name: AndroidManifest.xml
+SHA-256-Digest: /TZbfRVxTEPvTSMb7x0MR/DOHvEHg355OUkRp8Uebik=
+
+Name: assets/env/bootstrap/bootstrap.tar.gz
+SHA-256-Digest: aVgFTecO0TXH2UalDcmOkffvHkQav697gkwI0R+8IIA=
+
+Name: assets/env/manifest.json
+SHA-256-Digest: 4nUZpxlo7si60u8sBYJmihvTQWX6N3btpoF/3pu/J1k=
+
+Name: assets/env/overlay/bin/agy-daemon
+SHA-256-Digest: yeoyeoLyjOoYnAy6f09pTv9FbGvFFLBMSXwFDhANy/Y=
+
+Name: assets/env/overlay/bin/agy-fix-paths
+SHA-256-Digest: KI9MEFBaICBCPaG8Wul60WoOFunbePunqHroAo0eITM=
+
+Name: assets/env/overlay/bin/agy-notify
+SHA-256-Digest: GUBrfcdnOfgrHsYuhpOVdIf9+j76I8xg5/HMF8sTNI8=
+
+Name: assets/env/overlay/bin/agy-upgrade
+SHA-256-Digest: rc3NRZYcx7FXlYRBRNWvdy7GLnHT5P4re0hpVMvoxqk=
+
+Name: assets/env/overlay/bin/cs
+SHA-256-Digest: JkOFPhAXixyG8LnO/SJ7y29OSZydgx4b68D1JSDWoEk=
+
+Name: assets/env/overlay/bin/rish
+SHA-256-Digest: 64gxyN5O2vQDFg32RZRr5fpc5ZYPxADUrfoAyFZyWZ4=
+
+Name: assets/env/overlay/etc/antigravity/AGENTS.md
+SHA-256-Digest: DkftyrYaaFcwSIB0uZ4Gm9nFR3rhbFvqb5yJw9G0PmA=
+
+Name: assets/env/overlay/etc/hosts
+SHA-256-Digest: v0DT0cb8MG/632g2/cDwOoN/6lNawn02z9uQKoS/pmI=
+
+Name: assets/env/overlay/etc/motd
+SHA-256-Digest: Pq71btJkhLtbjmEs1AXsWVaQDIj3eSvlZkWBt+zr00Q=
+
+Name: assets/env/overlay/etc/pkg/repo.conf
+SHA-256-Digest: IpeGA2ncayqa+a6FJcAOxjpb9tjIAkui2itodYAyc1g=
+
+Name: assets/env/overlay/etc/profile
+SHA-256-Digest: KcmNIu1bHRBFPH4BHLnmyYawPN3v6KKiLqbjcgLWeaA=
+
+Name: assets/env/overlay/etc/profile.d/00-env.sh
+SHA-256-Digest: hsg636bktnfFIV1UKFWB/tT9OPcfrz+z2rYpgzDJHck=
+
+Name: assets/env/overlay/etc/resolv.conf
+SHA-256-Digest: Xdi+hLtgBcOaF9fOlZ5mx1EKMad4CWazzv3j6nyv9Ic=
+
+Name: assets/env/overlay/etc/tls/cert.pem
+SHA-256-Digest: 9m3/G9+PlgYLgXeXb4t9klS8ibxNuTPXafc4TShIC8k=
+
+Name: assets/env/overlay/etc/tls/openssl.cnf
+SHA-256-Digest: plosufTuj/3H708KxgDAva+5W3satFcYisYQpi9a1rM=
+
+Name: assets/env/overlay/lib/daemon/__init__.py
+SHA-256-Digest: b1kv12HKGTB4YHpicW7Q+QLStiVez3pyDDNujAz8QoA=
+
+Name: assets/env/overlay/lib/daemon/executor.py
+SHA-256-Digest: NYs3zpNUiDj5GMIe6Fby2P7bRvBZMkeULJo4krf7RF0=
+
+Name: assets/env/overlay/lib/daemon/scheduler.py
+SHA-256-Digest: aQl9jR24qP4RCCzFerk/YM0rjJZa/s6oydBUABXxrTk=
+
+Name: assets/env/overlay/lib/daemon/triggers.py
+SHA-256-Digest: 0FUFAkqPt7aiZ9AD0eYCyPFscMtD+B04vHx+dczb3+Y=
+
+Name: assets/env/overlay/lib/libtermux-exec.so
+SHA-256-Digest: kIM3hxPJAbMxHPd+5CCPcA6/9+StAH0vAdG3PiDt/dg=
+
+Name: assets/env/pkg/lib/db.sh
+SHA-256-Digest: uc62YlzV1EAtt0ENREesV+1ma3wgx6n2Sq1TE1IrHkw=
+
+Name: assets/env/pkg/lib/deb.sh
+SHA-256-Digest: N8mpHKMCjVDQq7zVoEg5sqBX/eaSuKwKmEVwmJKidVc=
+
+Name: assets/env/pkg/lib/fetch.sh
+SHA-256-Digest: MH6pdZOiBCa3k+DKG7a7ZEXSEzlOGjEEX9bDFnHbFWk=
+
+Name: assets/env/pkg/lib/index.awk
+SHA-256-Digest: w5pzGE0YS00lvDWoe2RoI1iWpgSZ5duRZG67IV7V7nY=
+
+Name: assets/env/pkg/lib/index.sh
+SHA-256-Digest: HafTSgVQPe8wS935frUW3vR8usyUaEs/OLlEmBC3ZrQ=
+
+Name: assets/env/pkg/lib/resolver.sh
+SHA-256-Digest: D6DAOMzP+WdUWEiOidCvNm5IAOvlJmX4T2I4ihyxgn8=
+
+Name: assets/env/pkg/lib/util.sh
+SHA-256-Digest: 65q6KD+evLSG5T/SqFw29YGQgpSK494LPqZ0fBXqVyE=
+
+Name: assets/env/pkg/lib/vercmp.awk
+SHA-256-Digest: FuwF32COG4b081eCPELcOqIq4ch8lD4d0KY5YcDfYoQ=
+
+Name: assets/env/pkg/lib/version.sh
+SHA-256-Digest: /piIgt4Tgt9e+bWYCaKgwwAAxw53NmdrJ+zBhCRDKq4=
+
+Name: assets/env/pkg/pkg
+SHA-256-Digest: 74fJvA4Kza6FwiTU7bgkM418+5J4H5YEEX7NTIrDl8c=
+
+Name: assets/runtime/bin/chrome
+SHA-256-Digest: GEgnBMa6IzJLA+5nUDiJh/1CGc6AE0uOY5kFdrPX9k0=
+
+Name: assets/runtime/bin/chromium
+SHA-256-Digest: GEgnBMa6IzJLA+5nUDiJh/1CGc6AE0uOY5kFdrPX9k0=
+
+Name: assets/runtime/bin/gnome-open
+SHA-256-Digest: GEgnBMa6IzJLA+5nUDiJh/1CGc6AE0uOY5kFdrPX9k0=
+
+Name: assets/runtime/bin/google-chrome
+SHA-256-Digest: GEgnBMa6IzJLA+5nUDiJh/1CGc6AE0uOY5kFdrPX9k0=
+
+Name: assets/runtime/bin/ld-linux-aarch64.so.1
+SHA-256-Digest: ykr3xAIiIrtAWwtgHYGFBupgiiJC88zkO9C1a3H5RTA=
+
+Name: assets/runtime/bin/liblanguage_server.so
+SHA-256-Digest: 8lE15LSixKjkyzGdw2sT65j6Rxj6gKquWngZk1Nw/yc=
+
+Name: assets/runtime/bin/libloader.so
+SHA-256-Digest: ykr3xAIiIrtAWwtgHYGFBupgiiJC88zkO9C1a3H5RTA=
+
+Name: assets/runtime/bin/open
+SHA-256-Digest: GEgnBMa6IzJLA+5nUDiJh/1CGc6AE0uOY5kFdrPX9k0=
+
+Name: assets/runtime/bin/open_helper
+SHA-256-Digest: GEgnBMa6IzJLA+5nUDiJh/1CGc6AE0uOY5kFdrPX9k0=
+
+Name: assets/runtime/bin/rish
+SHA-256-Digest: X0oHYcZzvh226Mzz6D+GNrj1zV4XfFa3h+Vrnf9vzd8=
+
+Name: assets/runtime/bin/sensible-browser
+SHA-256-Digest: GEgnBMa6IzJLA+5nUDiJh/1CGc6AE0uOY5kFdrPX9k0=
+
+Name: assets/runtime/bin/x-www-browser
+SHA-256-Digest: GEgnBMa6IzJLA+5nUDiJh/1CGc6AE0uOY5kFdrPX9k0=
+
+Name: assets/runtime/bin/xdg-open
+SHA-256-Digest: GEgnBMa6IzJLA+5nUDiJh/1CGc6AE0uOY5kFdrPX9k0=
+
+Name: assets/runtime/certs/ca-certificates.crt
+SHA-256-Digest: 9m3/G9+PlgYLgXeXb4t9klS8ibxNuTPXafc4TShIC8k=
+
+Name: assets/runtime/etc/hosts
+SHA-256-Digest: v0DT0cb8MG/632g2/cDwOoN/6lNawn02z9uQKoS/pmI=
+
+Name: assets/runtime/etc/nsswitch.conf
+SHA-256-Digest: KtkKAN3EDikx6dobfJQ6XUDRUDlDbqLiBELUfAkWlZ4=
+
+Name: assets/runtime/etc/resolv.conf
+SHA-256-Digest: 6REEat13bu+oPsw4Ju4T8DkhAT9QZ4oQTq0f4RRrVac=
+
+Name: assets/runtime/lib/ld-linux-aarch64.so.1
+SHA-256-Digest: ykr3xAIiIrtAWwtgHYGFBupgiiJC88zkO9C1a3H5RTA=
+
+Name: assets/runtime/lib/libc.so.6
+SHA-256-Digest: y3sAHA1AMBGeuQEK4tdH/LxREIz7HglA+nhhjXjcmuk=
+
+Name: assets/runtime/lib/libdl.so.2
+SHA-256-Digest: nIUEVH6irpQUZ2BVETWuSbGWWe4/bZE8Hy8FVpWn/Oc=
+
+Name: assets/runtime/lib/libgcc_s.so.1
+SHA-256-Digest: ItXbJf7OYydU96D7HGWG626T6ralhm2kh7hvEV1OOJ0=
+
+Name: assets/runtime/lib/liblse_compat.so
+SHA-256-Digest: rCQET8GAqiP7Hcs0f3X5eYah2FH0+tdoy/NJbN3wn+8=
+
+Name: assets/runtime/lib/libm.so.6
+SHA-256-Digest: bgcAhkV93Ebo+70u0Rpjuwo5Tp7rQbv74YJaoob5y7E=
+
+Name: assets/runtime/lib/libnss_dns.so.2
+SHA-256-Digest: Hqogbl4cfl+YMDjenCyaq7djNzNML06fpG/oBY6+fb4=
+
+Name: assets/runtime/lib/libnss_files.so.2
+SHA-256-Digest: Bol2vrV6/UOWgKnJrXJlJWIIjv1QvWjnIhRAA2MvXJY=
+
+Name: assets/runtime/lib/libpthread.so.0
+SHA-256-Digest: rfKjs4aUzda45sCPVqZHhkIMsg1zbO7OSMOHEUc1f/I=
+
+Name: assets/runtime/lib/libresolv.so.2
+SHA-256-Digest: SQCT8V6Pallm6J9hwBiHZXq6vrFUt1XEjZGm4quYiPI=
+
+Name: assets/runtime/lib/librt.so.1
+SHA-256-Digest: qUGmyetFWXxHWX53EejNJLA560iPIDN9KpbjXCLa8yc=
+
+Name: assets/runtime/manifest.json
+SHA-256-Digest: RCK8laHobfkSRKXAEBA79kzDwCKhjDSV3U36hHqSGcg=
+
+Name: assets/runtime/seed/AGENTS.md
+SHA-256-Digest: DkftyrYaaFcwSIB0uZ4Gm9nFR3rhbFvqb5yJw9G0PmA=
+
+Name: assets/runtime/seed/antigravity_state.gemini.pbtxt
+SHA-256-Digest: LDKqfut+9S9DTc+JMElBCZdy5PrcvLs0XYIDQvwpAYM=
+
+Name: assets/runtime/seed/antigravity_state.pbtxt
+SHA-256-Digest: YEc/x2dbWWN1o56WV6xzBO3B7GRdyyx2iSYpIsPUgpc=
+
+Name: assets/runtime/seed/jetski_state.pbtxt
+SHA-256-Digest: YEc/x2dbWWN1o56WV6xzBO3B7GRdyyx2iSYpIsPUgpc=
+
+Name: assets/web/README.md
+SHA-256-Digest: FieWl2CLpb9bEr/cxKGs4Vl2b1mwdr6a3+8nwBvLDdU=
+
+Name: assets/web/antigravityActionRequired.mp3
+SHA-256-Digest: fYrmbHypYmNIYNz5AaaUlN1sekJajxH9byd108r9Ptc=
+
+Name: assets/web/antigravityCascadeDone.mp3
+SHA-256-Digest: QY4kuD5a/2ApaJPP4EQjziNFnAbA82Uu0GoZtv8DXAc=
+
+Name: assets/web/audio_processor.js
+SHA-256-Digest: HNGFup0wk9Cz3OFaaIPahjuofb7vEpNXMkz+qYUea4c=
+
+Name: assets/web/compiled_tailwind.css
+SHA-256-Digest: DD95GdXcSkuWEz2eIQifhP2rksgvs7kIjoO4OQgK2KY=
+
+Name: assets/web/dark.png
+SHA-256-Digest: N9OLMeLNx/u+lmiq/Z4fnMs7/iZf3FRqNBp9RgdHfaQ=
+
+Name: assets/web/diff_worker.js
+SHA-256-Digest: 7dKlCUlPjLbRPtLxr3kr8MX1hQo7RpaiC3p2q7rSlOQ=
+
+Name: assets/web/generated/boot/custom-elements-guard.js
+SHA-256-Digest: LkvKzAXNr58l4YZ9mbH0ajf7eJrNtucaPIVQXKVEbMc=
+
+Name: assets/web/generated/boot/theme-bootstrap.js
+SHA-256-Digest: DXeIR4B/1zqM+RNtBDadIr4TAaTYWVCG1uGFNpVUQt0=
+
+Name: assets/web/generated/bridge.core.js
+SHA-256-Digest: 23T0YJq55P2x6qiRm9W2yFS1Zd2cT3RW2lZGpFYe6HI=
+
+Name: assets/web/generated/main.js
+SHA-256-Digest: nAZNydWRE16CRZlWfpxsd0dzCzzDx/ghyno3m5Oy6CM=
+
+Name: assets/web/generated/patches/startup_ready.js
+SHA-256-Digest: XX2G7f3Zx6vU/x7H5V4AWEGbbuyZusnwW/b606nLu38=
+
+Name: assets/web/generated/patches/theme_sync.js
+SHA-256-Digest: bruiiTmYU2xH5BtP+q0zgju6ZOVe1XeM9hoUku7VUVI=
+
+Name: assets/web/generated/patches/touch_model_menu.js
+SHA-256-Digest: 6ilD6i0pKVgvJbjgA356jxVjbvzjG5SgemWyvtB4v8E=
+
+Name: assets/web/generated/patches/web_optimizations.js
+SHA-256-Digest: xn4FVwIfCGF3/aJUr1rMpwcCdJMy3f4PybVO1wsmUyo=
+
+Name: assets/web/google_signin.svg
+SHA-256-Digest: QWYrx8iCoXpDTy07GOYqpHLfrL7JnmePAOK98T4VjRY=
+
+Name: assets/web/index.html
+SHA-256-Digest: eeO17pe8fcBVSo+QY0LfSm6SbEzvYGTxC3SR14MReZ8=
+
+Name: assets/web/jetbox.css
+SHA-256-Digest: dhpG63JGLisMS0o4FV6LhgvEBTRISd16EnSr7nJnDLQ=
+
+Name: assets/web/light.png
+SHA-256-Digest: 31+NhMkXKsysihyAkRTMJ5soYoCLcwt+9jWp2mc34Uc=
+
+Name: assets/web/prism_bundle.js
+SHA-256-Digest: lMRs34pXDbRKigG2pJsMAzy7J4jBdPcMR4LZObro8uI=
+
+Name: assets/web/symbols-icons/icons/files/angular-component.svg
+SHA-256-Digest: ZA4Y7qb79CE2SfvQP7E72g7zCNYcy65BMv4qqz+l/1M=
+
+Name: assets/web/symbols-icons/icons/files/angular-directive.svg
+SHA-256-Digest: lt9yNkJ7VqlX4B/EiBjWpj3Qs+GAUApxkXoUPvm6llg=
+
+Name: assets/web/symbols-icons/icons/files/angular-guard.svg
+SHA-256-Digest: YHEi26XZnQ7Yfg/ccfFQq/e471Mrjwgufrtw08KGByk=
+
+Name: assets/web/symbols-icons/icons/files/angular-module.svg
+SHA-256-Digest: oFPzZc/sK29jwk7qNTwjWwICBJ8mKaZK2pXJEBB6CKo=
+
+Name: assets/web/symbols-icons/icons/files/angular-pipe.svg
+SHA-256-Digest: YP53ymnSLwKgD0UzkTfCBSIko0lwRkCeoYOVnCWNri8=
+
+Name: assets/web/symbols-icons/icons/files/angular-service.svg
+SHA-256-Digest: e/cVoONfAE5HB0dKZGAiveoQ+z6Z/ScSsuQn7isSpMs=
+
+Name: assets/web/symbols-icons/icons/files/angular.svg
+SHA-256-Digest: hDvVZKJaMR5liuIYlXnp1TLFLsdpHmK5If0ASfgEerg=
+
+Name: assets/web/symbols-icons/icons/files/astro.svg
+SHA-256-Digest: bQDgrInZ/tLdDI0BdCUaN5gefiHUmo/07EWENhtoTVA=
+
+Name: assets/web/symbols-icons/icons/files/audio.svg
+SHA-256-Digest: 1w47bq04H0CeSFWOlJQuXX46kn1pdhSCocE+6DnsfR8=
+
+Name: assets/web/symbols-icons/icons/files/babel.svg
+SHA-256-Digest: j0HmXndb5yXX0/GudLHG57VztK7aJeRSFRY0ymXsVwM=
+
+Name: assets/web/symbols-icons/icons/files/biome.svg
+SHA-256-Digest: 3E8bIlj4xdNDUWgJ3JuR3Iuy0qNIq0Ncu7VPdUg/Y7A=
+
+Name: assets/web/symbols-icons/icons/files/brackets-blue.svg
+SHA-256-Digest: kqMQgMc8gqlB615hEp8t2rhuWXRdcoNdBTHGI1W0Btg=
+
+Name: assets/web/symbols-icons/icons/files/brackets-gray.svg
+SHA-256-Digest: OZueZaGYPBb/z0IONtWrdvVQd8iNUNS0GZQqeMHoo14=
+
+Name: assets/web/symbols-icons/icons/files/brackets-green.svg
+SHA-256-Digest: kOLGEauXUiecQgSsjZLxbY63otNIlJVzU28PqVyFL+M=
+
+Name: assets/web/symbols-icons/icons/files/brackets-orange.svg
+SHA-256-Digest: 0zljukYcG0iS4JuozEvwpw++1igNPGBlZi6g0p6tNUE=
+
+Name: assets/web/symbols-icons/icons/files/brackets-pink.svg
+SHA-256-Digest: GrFHS+zERgvR+wcZR9VuO7p/22VKVtCCe9EQAaDFsQg=
+
+Name: assets/web/symbols-icons/icons/files/brackets-purple.svg
+SHA-256-Digest: F3GL67xkAfBSCmHzyBfGKsyl0nEyxUuTCjVO4qHCX1c=
+
+Name: assets/web/symbols-icons/icons/files/brackets-red.svg
+SHA-256-Digest: NMWLoRFG75qgnQVqcF3+aPS4bxRLVGMKHsmlnCPo6bA=
+
+Name: assets/web/symbols-icons/icons/files/brackets-sky.svg
+SHA-256-Digest: 6iqgJthm92lnll+hIfJFk6qhLgaaY42ofDT7EjurV7Q=
+
+Name: assets/web/symbols-icons/icons/files/brackets-yellow.svg
+SHA-256-Digest: eE2lH84Lvpd8bc/eUTnBjPbwqAbDhuLbra4GAJHmXEc=
+
+Name: assets/web/symbols-icons/icons/files/bruno.svg
+SHA-256-Digest: d7HRHjHTKov6XCjLccJN2fYYric9euPzwWnEN/parxc=
+
+Name: assets/web/symbols-icons/icons/files/bun.svg
+SHA-256-Digest: w6MGaIG4LsSg7QlAUNTQfz1hjLhcq1cxJlOlwn6113M=
+
+Name: assets/web/symbols-icons/icons/files/c.svg
+SHA-256-Digest: LE2IsUu3c2rVgIxZmSclGJnp4vxesigwpqI7F7QuCrY=
+
+Name: assets/web/symbols-icons/icons/files/capacitor.svg
+SHA-256-Digest: rN956fyQz9sgpQiV2w2drQ7RKHJzZoUPgAxs40ium7g=
+
+Name: assets/web/symbols-icons/icons/files/clojure.svg
+SHA-256-Digest: F2SlHRvkHUXlidT2RPdhITo24zUNPPKnvKWZbmozIXE=
+
+Name: assets/web/symbols-icons/icons/files/cloudflare-workers.svg
+SHA-256-Digest: Ppqp+MmO6qLDAzYGJlS7VpjFRw5pEOFTTxs+djDnT4g=
+
+Name: assets/web/symbols-icons/icons/files/cmake.svg
+SHA-256-Digest: DOIedjjLGnX3J45oqsPt9gmrc8EfkFwl2HSHXBZf3d4=
+
+Name: assets/web/symbols-icons/icons/files/code-blue.svg
+SHA-256-Digest: I10U+QpqRVu35fX59s+Q4/Xgw4Lyqi3q/15eHJDQnEo=
+
+Name: assets/web/symbols-icons/icons/files/code-gray.svg
+SHA-256-Digest: qMeSeJ5LZHBYoS6/uoFvWgDn8lczL0IL7D25vb5cerw=
+
+Name: assets/web/symbols-icons/icons/files/code-green.svg
+SHA-256-Digest: 0PHL7IteTF9EVx9bBDgRb+rPcIpGQsnnQ4+iGrCmcek=
+
+Name: assets/web/symbols-icons/icons/files/code-orange.svg
+SHA-256-Digest: F2PuVOCpgaStGC4gucmc7IrOjZje+im0GNXI4dqjVD4=
+
+Name: assets/web/symbols-icons/icons/files/code-pink.svg
+SHA-256-Digest: 8YTXz74pHNYBy5IQvREQwQA8J8mm/KqPG68tSom6sFk=
+
+Name: assets/web/symbols-icons/icons/files/code-purple.svg
+SHA-256-Digest: Tq97jZABmMmOiXK+NtzpBtEll12yy7GA8xJzLkjnCnE=
+
+Name: assets/web/symbols-icons/icons/files/code-red.svg
+SHA-256-Digest: L7SAVLgaLS+ACdgjg6xdLR2NibuRofCm4W12DkpZwsg=
+
+Name: assets/web/symbols-icons/icons/files/code-sky.svg
+SHA-256-Digest: DBI/IGOO3TulNtQhSPXwgkrcOlRXmxyELxi9jlYDEVc=
+
+Name: assets/web/symbols-icons/icons/files/code-yellow.svg
+SHA-256-Digest: lL1PaCrOK1qLS21urv4ZT54kOoz2dP6VE/uzMO9YQuE=
+
+Name: assets/web/symbols-icons/icons/files/coffeescript.svg
+SHA-256-Digest: ucebU656CM1PPLTSYoeMMnqfvFxBeQgMuXf7W2ue4Mc=
+
+Name: assets/web/symbols-icons/icons/files/coldfusion.svg
+SHA-256-Digest: +TTYLcJNxlbzJa0EiWN2aTZy1B19Uy8W4xuYkqOTsxM=
+
+Name: assets/web/symbols-icons/icons/files/contentlayer.svg
+SHA-256-Digest: vtZNLIhxugS5sTXaeUkMJ3clBZVz0e8reOOxBcgLesA=
+
+Name: assets/web/symbols-icons/icons/files/cplus.svg
+SHA-256-Digest: bHlxa1URIypKw+IJr4eyUcluzfWwSBUo8W6P3F99Nn0=
+
+Name: assets/web/symbols-icons/icons/files/crystal.svg
+SHA-256-Digest: UcAS0kXh77WF+vrjUzioY7NnX0NUe0o1aCWmgFqI6pA=
+
+Name: assets/web/symbols-icons/icons/files/csharp.svg
+SHA-256-Digest: Y9/Zi4PDy+gjvCTHzfYdjKNbgFPpjPGtOeJxtmvbAYc=
+
+Name: assets/web/symbols-icons/icons/files/csv.svg
+SHA-256-Digest: ghCm/keyAqFkKhaJaV319IbQES9Ypl/pjNructq6isc=
+
+Name: assets/web/symbols-icons/icons/files/cucumber.svg
+SHA-256-Digest: ImMIrWT5hXQJMCzoiEhI8KlZIwE2Xr8Gkc75yWPN0Kc=
+
+Name: assets/web/symbols-icons/icons/files/cuda.svg
+SHA-256-Digest: m8cURlk/u72pXlWNwlwX7cfs1neOzpgVRSxii754uUQ=
+
+Name: assets/web/symbols-icons/icons/files/cypress.svg
+SHA-256-Digest: 0zKdY/6y6vzyEJSP3yYburyeHt34g11J+EH7VMvmTJw=
+
+Name: assets/web/symbols-icons/icons/files/dart.svg
+SHA-256-Digest: Vy3mT7gIjTUnG8OGoYUPfifeQaOgV0nO7xumuWPUh/s=
+
+Name: assets/web/symbols-icons/icons/files/database.svg
+SHA-256-Digest: DnXZvCRCcauF2w2YrWfdhfoiLUAFr9sbzgHyCYkus/k=
+
+Name: assets/web/symbols-icons/icons/files/deno.svg
+SHA-256-Digest: 03A4ey5/zk6AAGpWGO/b1hWRNDuH74Se+PJ7WOq2SPo=
+
+Name: assets/web/symbols-icons/icons/files/docker.svg
+SHA-256-Digest: t8AmUFTUoTST1j6ULtqzN52hjdfXZKDvNRoOiL38x7Q=
+
+Name: assets/web/symbols-icons/icons/files/document.svg
+SHA-256-Digest: 9Hna4QbQT12HrV40Np5pvzf1zurpsMzIHUkjVct3raw=
+
+Name: assets/web/symbols-icons/icons/files/docusaurus.svg
+SHA-256-Digest: 9TE6PcK45gaOQn5xRjfBI4XdaE0Ay/VU71bFohdnnWY=
+
+Name: assets/web/symbols-icons/icons/files/drawio.svg
+SHA-256-Digest: b3Km50wyh2JycRzSSEKnuR/280s5UPbYLZ3lNACdlmU=
+
+Name: assets/web/symbols-icons/icons/files/drizzle.svg
+SHA-256-Digest: ZIq5MbvrUoAf9p7wK/zlOVQNV+EwnAaZ9ZDTyMxAPDo=
+
+Name: assets/web/symbols-icons/icons/files/dts.svg
+SHA-256-Digest: n5YS1aE1afBRIoVYpQK7F2y3p/1p4T4C24NGc85ATiI=
+
+Name: assets/web/symbols-icons/icons/files/dune.svg
+SHA-256-Digest: /3F9Lt/izZMvdl+hFzoACBGRHHQryyxIrp/KNExz3rw=
+
+Name: assets/web/symbols-icons/icons/files/earthfile.svg
+SHA-256-Digest: RRf9Cazh1pPjwC1+aI9btmSn526UH3JCX+DZamszS6I=
+
+Name: assets/web/symbols-icons/icons/files/editorconfig.svg
+SHA-256-Digest: AzAUXtFFWl0mZvirH2KoYktXFZxkHB2mGcUDDDUlRKs=
+
+Name: assets/web/symbols-icons/icons/files/elixir.svg
+SHA-256-Digest: 47v0qXI9vAW3IvEmRzYl4LVnK44VHQXars2OLmH2wyU=
+
+Name: assets/web/symbols-icons/icons/files/erlang.svg
+SHA-256-Digest: gfw/HYpv4B1wCHysheYLXSyZUIaAQXz5PA5euhbMFcM=
+
+Name: assets/web/symbols-icons/icons/files/eslint.svg
+SHA-256-Digest: lCggxleHQCwoD3MKEihR1swE41cTCZPaFI7DIVVSqgk=
+
+Name: assets/web/symbols-icons/icons/files/exe.svg
+SHA-256-Digest: 9wc/IL7OjwYb35Vxnt8jmqEAPeAjX4zICfwwfWxEPU8=
+
+Name: assets/web/symbols-icons/icons/files/expressive-code.svg
+SHA-256-Digest: wqopnj/tkULUTbhtlF4+LrmCPyeIdZeoEXGYfewYg5w=
+
+Name: assets/web/symbols-icons/icons/files/firebase.svg
+SHA-256-Digest: 176Io3DKmxnGrvFitzjdv6pW9KoYUcYjPwCk08+GX4E=
+
+Name: assets/web/symbols-icons/icons/files/font.svg
+SHA-256-Digest: Fszgyffq/vNRoD/3kHfxBQVLA1HkTb4V+ilnhb/DI6k=
+
+Name: assets/web/symbols-icons/icons/files/fortran.svg
+SHA-256-Digest: xualQ5yaiD6HmmWC2ZorLk5aDsj7+3pWPhOQ4dyvsfc=
+
+Name: assets/web/symbols-icons/icons/files/fresh.svg
+SHA-256-Digest: 8b1lXOP54Yoaql5lW/zPIoDA+WwFj9HNx5O7pL7EFoo=
+
+Name: assets/web/symbols-icons/icons/files/fsharp.svg
+SHA-256-Digest: BbdSaws33me7q9m6CdGjGy3Ibnlq+57mBFeq1Uyk6h0=
+
+Name: assets/web/symbols-icons/icons/files/func.svg
+SHA-256-Digest: riFbKBj4Qm/J7sTvAEwfp4aN/Q6+C9VCcPGQM7MmnXg=
+
+Name: assets/web/symbols-icons/icons/files/gatsby.svg
+SHA-256-Digest: sHgfsKvS3IW1j1xF276IrKMO9Y/mvGOfCskZLayeUIA=
+
+Name: assets/web/symbols-icons/icons/files/gear.svg
+SHA-256-Digest: Ir9RoBMUml7vi4CkxJ/rwgdbWzfHofMyLlXbEIXsUjE=
+
+Name: assets/web/symbols-icons/icons/files/gif.svg
+SHA-256-Digest: RHHFKlHF2NdsCuRk+e5SL/3aflZ0rAMrSBr/d5Opc2M=
+
+Name: assets/web/symbols-icons/icons/files/git.svg
+SHA-256-Digest: GYUzv5FbGkXVYaRhdna7KXBekJANQmMie1pRIIK/wq4=
+
+Name: assets/web/symbols-icons/icons/files/github.svg
+SHA-256-Digest: wdnKhz+dHYzX5yG/iqYwfokQciqAfNs3+bVxfBSf1kA=
+
+Name: assets/web/symbols-icons/icons/files/gitlab.svg
+SHA-256-Digest: BiO4ej/rCxMGJBa4Ige5FN7pAmH3RkWEsPf20v8GF90=
+
+Name: assets/web/symbols-icons/icons/files/gleam.svg
+SHA-256-Digest: QFlna2/e9lRtmUPV9U0eQFYsVVNsP4FhzR9+oHd97tc=
+
+Name: assets/web/symbols-icons/icons/files/go-mod.svg
+SHA-256-Digest: 5q68JkYd6pRcldypuESrmkBZ47S1lruQpvh5D8yTRy4=
+
+Name: assets/web/symbols-icons/icons/files/go.svg
+SHA-256-Digest: dEDxeDKMkbhMl+IxAv7AFzKGzdNEn0GhUKIlnO7ebSE=
+
+Name: assets/web/symbols-icons/icons/files/gradle.svg
+SHA-256-Digest: MsI9l9avM/EgC14mLO9qcNUSkOpTwd5nKIA1LDTOAzk=
+
+Name: assets/web/symbols-icons/icons/files/graphql.svg
+SHA-256-Digest: XaVOcqObCzx0UIbIvw1x3WJzlRa0CF4lqf/8Lrpv2a4=
+
+Name: assets/web/symbols-icons/icons/files/gulp.svg
+SHA-256-Digest: aPd/e8SQ0REkDdr/6HOi8d2u3B0rojAEe03QHDOTSHA=
+
+Name: assets/web/symbols-icons/icons/files/h.svg
+SHA-256-Digest: ydM36vDH1428yQO0UZhZh54Jf4PvjmMHOngeotdXfD8=
+
+Name: assets/web/symbols-icons/icons/files/haml.svg
+SHA-256-Digest: KRyerFAQ56X1qoy9gbndk7HYQgtOh4Lc/LOm9BBVR84=
+
+Name: assets/web/symbols-icons/icons/files/haskell.svg
+SHA-256-Digest: MBZdUetrGSDdF7MKsOlISpg03YHJ6VhNi3zrwUoOgXI=
+
+Name: assets/web/symbols-icons/icons/files/http.svg
+SHA-256-Digest: gutOXUS/ZPOV4DNVxLckGqika29wthRs2V5F+SMhy2I=
+
+Name: assets/web/symbols-icons/icons/files/hugo.svg
+SHA-256-Digest: 82BBByG30PLSAbNEudlR8yipZJO1bWyC8o7i3PbZ04E=
+
+Name: assets/web/symbols-icons/icons/files/i18n.svg
+SHA-256-Digest: aFKKVtUAry9wInU+cua8yGT4sL3DB7WOfQfa4xcPyDI=
+
+Name: assets/web/symbols-icons/icons/files/ignore.svg
+SHA-256-Digest: S72D9GDB1GRUVlEtTwHLDBHTGQck6NdI5dVzDJyOEdg=
+
+Name: assets/web/symbols-icons/icons/files/image.svg
+SHA-256-Digest: cWzMFVKimjCoyKjrw22guG1Niir+QC0aeDAjh9srryE=
+
+Name: assets/web/symbols-icons/icons/files/ionic.svg
+SHA-256-Digest: cNjV6NQ/rSumgZP+lacriwuM+OPVtekZvMGikp6yEZg=
+
+Name: assets/web/symbols-icons/icons/files/java.svg
+SHA-256-Digest: Xi4bw4scQBD+gqZ6x0P0aRyClZ/2t1hFW/qsFdUFURs=
+
+Name: assets/web/symbols-icons/icons/files/jenkins.svg
+SHA-256-Digest: 4N0SxOyiK/R22DF0DpJH5MTbukZr2qo7/QbIjlQrQ24=
+
+Name: assets/web/symbols-icons/icons/files/jest.svg
+SHA-256-Digest: MoHIdzEFW79iZqqBAhZaMuJ9F6rkPc2herknbyAKP5o=
+
+Name: assets/web/symbols-icons/icons/files/js-test.svg
+SHA-256-Digest: wvAneyJiPdnHRdpaU8l9G2KYx6joEBxGiwwQ6ekEyIA=
+
+Name: assets/web/symbols-icons/icons/files/js.svg
+SHA-256-Digest: hDMfG5jBGSjWNWPGwHSLJeaKeff26qxU/ctnvqaEvAc=
+
+Name: assets/web/symbols-icons/icons/files/julia-markdown.svg
+SHA-256-Digest: 6KeEM4dLguwjSN+kF2ie6TqjKVhD0JS0bh5X1yqBS9M=
+
+Name: assets/web/symbols-icons/icons/files/julia.svg
+SHA-256-Digest: wg5cX3e7RIElzsMnJMZwr3/dDGYbVwxXG8o+UN5WC2E=
+
+Name: assets/web/symbols-icons/icons/files/keystatic.svg
+SHA-256-Digest: CcdMEOBEcZfOqPv5rV9J/lruUy9VgWRJ/mooqmHmxWM=
+
+Name: assets/web/symbols-icons/icons/files/knip.svg
+SHA-256-Digest: BxJUCH2YvPsh1zOM//r5wvbtvqlGhLDezxUwxaBzobc=
+
+Name: assets/web/symbols-icons/icons/files/kotlin.svg
+SHA-256-Digest: YdGbmtVxEB+W+iprBe9krypNifAcfzWMd4p7ZnmIAaU=
+
+Name: assets/web/symbols-icons/icons/files/laravel.svg
+SHA-256-Digest: gvgazbBzDDfF0y+4OviHLqvnWsuq5tbpiz2DfOJWpss=
+
+Name: assets/web/symbols-icons/icons/files/license.svg
+SHA-256-Digest: Gi/ZJjwNuBcQB17c4RLNoDH+bkoCoxaU73SS6fmuM3I=
+
+Name: assets/web/symbols-icons/icons/files/liquid.svg
+SHA-256-Digest: kqObnxo2nkH5eM5gtLal9OYkIusT4HdKQD4vlBwHbUk=
+
+Name: assets/web/symbols-icons/icons/files/lock.svg
+SHA-256-Digest: NFThIp2NRkHaO9Vmhj7ASs+1B4GeRaEBjrJCEXUTpi0=
+
+Name: assets/web/symbols-icons/icons/files/lua.svg
+SHA-256-Digest: Ir8M7lLTDPIUMp0GFIAvNX3wBu3mkF3GsESL7Qgx3yU=
+
+Name: assets/web/symbols-icons/icons/files/luau.svg
+SHA-256-Digest: ptZ0uh8u8fYwWiTqKBjKPuUifWhKPZV0vJ+iZHsifw0=
+
+Name: assets/web/symbols-icons/icons/files/lunaria.svg
+SHA-256-Digest: v6+4JeJZlvwiiMt2vjE/1Cbn5UeLsBE4YW9H6LEKVVY=
+
+Name: assets/web/symbols-icons/icons/files/markdoc.svg
+SHA-256-Digest: ABY3GWUQck8RWgNLxT7GC0NvSO1O6YZBkizRRCDiGsg=
+
+Name: assets/web/symbols-icons/icons/files/markdown.svg
+SHA-256-Digest: mHJm47xR3TtQKi7KjhrfZSPPIS6RIb4+0eNCN5X7ozw=
+
+Name: assets/web/symbols-icons/icons/files/mdx.svg
+SHA-256-Digest: v7O5+N4Hc0MpdoMW/CO0O/AeH0IDwxfKyRN4S5FCXlI=
+
+Name: assets/web/symbols-icons/icons/files/minecraft.svg
+SHA-256-Digest: 3S1aManxtFMgYEYRaIEh/QsR97DIFPfzOzTcUb+NxPY=
+
+Name: assets/web/symbols-icons/icons/files/mongo.svg
+SHA-256-Digest: OdUnegRF4MkWd9BtVVuj8RfdjhhbW0e3GpDkR8I/o3Q=
+
+Name: assets/web/symbols-icons/icons/files/nest-controller.svg
+SHA-256-Digest: lTOnIb8R+HoyHj1EV34JeUQwJqIuK2VVjCJ2gyy+Ts8=
+
+Name: assets/web/symbols-icons/icons/files/nest-guard.svg
+SHA-256-Digest: HgPosECXSdATUuovgkvpHahT4jqdTkBJsMLNpJmKKmk=
+
+Name: assets/web/symbols-icons/icons/files/nest-service.svg
+SHA-256-Digest: BeKe+IjUnU7HzgPF9b0p8w9G/jTRiBv7QMAZLqrCyX8=
+
+Name: assets/web/symbols-icons/icons/files/nest.svg
+SHA-256-Digest: lu6Bv3eatfhPhESZ0fxCxFCvbf18Ew6SEcxBmS6bxZk=
+
+Name: assets/web/symbols-icons/icons/files/netlify.svg
+SHA-256-Digest: xxuoCBHN1LJ5Gd5u7Onf/mQSn0f38WbThob5Nl3N1Qw=
+
+Name: assets/web/symbols-icons/icons/files/next.svg
+SHA-256-Digest: dT97pCxyDO1wNsnA8aIDexWDRhpsewh1mKGboONd0aY=
+
+Name: assets/web/symbols-icons/icons/files/nix.svg
+SHA-256-Digest: vfFx2reYvBe5uqe6Sclu4RC3taGfzjKZ+yu6q2hTFRs=
+
+Name: assets/web/symbols-icons/icons/files/node.svg
+SHA-256-Digest: oeP3wP6KsXOtNqUPv2A5TIP8vCQU16rtWgJWDsqcr+w=
+
+Name: assets/web/symbols-icons/icons/files/nodemon.svg
+SHA-256-Digest: 0uANrIfHDx5sNeusdLGVd08Jink1ZYbw9Imf1hp6qTA=
+
+Name: assets/web/symbols-icons/icons/files/notebook.svg
+SHA-256-Digest: AgZ7CvwTvfWJhX8/F/lAyubOJqmOHFJrVwMF6i1pDGw=
+
+Name: assets/web/symbols-icons/icons/files/npm.svg
+SHA-256-Digest: 8TklyQZvsrQZY6iUVahC42YyPXaeXb6+9/esOAk5YQk=
+
+Name: assets/web/symbols-icons/icons/files/nunjucks.svg
+SHA-256-Digest: 9v3Dyu57MSQEpB60mtq5YzzgNW7MWeFR7uq2VhrPVQ8=
+
+Name: assets/web/symbols-icons/icons/files/nuxt.png
+SHA-256-Digest: ZDAU7KaVPOcs0j8ThWTFkG6JVqTUv4nPL7/p/7GD20s=
+
+Name: assets/web/symbols-icons/icons/files/nuxt.svg
+SHA-256-Digest: 9HCIOauPvn1vRGibzDXQ6S+kd1gN0bO6xQLp8+k4O3s=
+
+Name: assets/web/symbols-icons/icons/files/ocaml.svg
+SHA-256-Digest: p3eDPyYKsidxSaDsB2pgTfDQxLVl07e7v41VRhic7Oo=
+
+Name: assets/web/symbols-icons/icons/files/oxlint.svg
+SHA-256-Digest: z4G0QecLQQtipvZ3N5xmGppiA4YbiLQbLwGMnmRq5vE=
+
+Name: assets/web/symbols-icons/icons/files/panda.svg
+SHA-256-Digest: lgIFZ7Uqf/eEn7nOyQlZK/klpeCguNs2Ih34ReZKTV8=
+
+Name: assets/web/symbols-icons/icons/files/patch.svg
+SHA-256-Digest: nRE2f0cVEl55ncjvIwxC5NKaNLMfMupstKxE7hF9dK0=
+
+Name: assets/web/symbols-icons/icons/files/pdf.svg
+SHA-256-Digest: qbUa18DgKwB5dFBmVVqwN7dIg2GAbFcCw62jvMiC3dw=
+
+Name: assets/web/symbols-icons/icons/files/perl.svg
+SHA-256-Digest: +j4AAM4+Ro81Dl1jf5cFggWLTsUWFeCOlAs61IhzLQE=
+
+Name: assets/web/symbols-icons/icons/files/php.svg
+SHA-256-Digest: yGlAKrcWqe2DhgNdUOVGj46UW1syMlb7UpGTJziZrQw=
+
+Name: assets/web/symbols-icons/icons/files/pkl.svg
+SHA-256-Digest: okFfx49ZYBd7QwmgjgsF3Cx0gsMKmnuPPTejdnEkRvU=
+
+Name: assets/web/symbols-icons/icons/files/pnpm.svg
+SHA-256-Digest: OrpU/QU1+irBFgUkF1WunSijagzvdzjiBGqxG6Wv7e4=
+
+Name: assets/web/symbols-icons/icons/files/postcss.svg
+SHA-256-Digest: KoBoC0CWWOGza2WvARdA84eFK4LMs34aOJXby/9GUEI=
+
+Name: assets/web/symbols-icons/icons/files/prettier.svg
+SHA-256-Digest: EMSlcDyPu8uDjRDPw0Ih2DOBIbAZtc6VmStEbPo29jI=
+
+Name: assets/web/symbols-icons/icons/files/prisma.svg
+SHA-256-Digest: 4PxDo4FjvTZ9wsQweKpQeHTUGOFEuQrIdPYiJho43OE=
+
+Name: assets/web/symbols-icons/icons/files/proto.svg
+SHA-256-Digest: ALtWRYK6iQEjrjob6vSDda+EX7w0GQawvhkfA3+rZ0E=
+
+Name: assets/web/symbols-icons/icons/files/pug.svg
+SHA-256-Digest: PRCplR6X3t6nrpr1tjGXzY3L2KSvkte5uvcHRCki9vE=
+
+Name: assets/web/symbols-icons/icons/files/pulumi.svg
+SHA-256-Digest: /efetPpcwbPi/HMOiJOhurfgPMhGFONcKPzrjfTnPmg=
+
+Name: assets/web/symbols-icons/icons/files/puzzle.svg
+SHA-256-Digest: hDwQ8RsQs/H6VjYkLy/kJLeVaiZKCj3iPWUGGGXySjY=
+
+Name: assets/web/symbols-icons/icons/files/python.svg
+SHA-256-Digest: HuAzKtJYrY8PesHuVwRDKrxx7U/6LStQx/jmaIm8Jww=
+
+Name: assets/web/symbols-icons/icons/files/r.svg
+SHA-256-Digest: Hnyp8FvFX+RjCZdcpWphaO5LgaslSxWVueR9cx8sBO4=
+
+Name: assets/web/symbols-icons/icons/files/razor.svg
+SHA-256-Digest: PSLoc5rdmYrkfua4jKSh2HXUH6VRnKvKMmHHTwwBtts=
+
+Name: assets/web/symbols-icons/icons/files/react-test.svg
+SHA-256-Digest: 9zgN6FiGblC0j/actjtq5Bc+dhaGw4wUiwviesRfPo8=
+
+Name: assets/web/symbols-icons/icons/files/react-ts.svg
+SHA-256-Digest: OrupOOwjnxIEJ9B1tIi5I1h1DUR1l43CEJar89JbzLQ=
+
+Name: assets/web/symbols-icons/icons/files/react.svg
+SHA-256-Digest: +wo1YgrDZ/PAa7id/MEpxl7GDc3Q4kmy92gnkuhojkI=
+
+Name: assets/web/symbols-icons/icons/files/redux-actions.svg
+SHA-256-Digest: mzQzJDt4a4iwZSjgHrRv8Bv8l1Z7ptnQpuYPE4sTJqU=
+
+Name: assets/web/symbols-icons/icons/files/redux-effects.svg
+SHA-256-Digest: fwyIyIvOCHVjFNvWQGwl91NXfJOqZGYKakxpKgs8Xbs=
+
+Name: assets/web/symbols-icons/icons/files/redux-facade.svg
+SHA-256-Digest: pOlr2sMU/zcTJ5kBJcNe+7d8w2zsdqz97JPUSsv2UzM=
+
+Name: assets/web/symbols-icons/icons/files/redux-reducer.svg
+SHA-256-Digest: lN4LxWbj6Aonv2jtg8OwFbaSg30Uf/EwCpNp7JWO41A=
+
+Name: assets/web/symbols-icons/icons/files/redux-selector.svg
+SHA-256-Digest: NuH4DU9TuOLqJiI/nYsqVARgccc0juQ5XWCEQHQJumE=
+
+Name: assets/web/symbols-icons/icons/files/rescript-interface.svg
+SHA-256-Digest: Q2zlsI38C4734MmS8B5ySyEqJWQA8SS8+q3nbAyiSuU=
+
+Name: assets/web/symbols-icons/icons/files/rescript.svg
+SHA-256-Digest: 8+x0kyLErhv0/23dZsgsUNi2zpVxarDheGY/qXStCOk=
+
+Name: assets/web/symbols-icons/icons/files/robot.svg
+SHA-256-Digest: ZYVd+CH3Bmwt5OazICDrXq4fsORzk6TV9PyT0O2fnzc=
+
+Name: assets/web/symbols-icons/icons/files/rome.svg
+SHA-256-Digest: pfsx/nXUPH+bml6oOAFsQL53alMy9oCkgc9IJaT1YPw=
+
+Name: assets/web/symbols-icons/icons/files/rsbuild.svg
+SHA-256-Digest: 6ob7r9Ut1MmAg22g/gFcmIx0tEqIHx1FNCTGkTP3eGg=
+
+Name: assets/web/symbols-icons/icons/files/rslib.svg
+SHA-256-Digest: znnRgBL52LpCFTtpfm3x31lI0oBm8KUoqe2imbIdbbU=
+
+Name: assets/web/symbols-icons/icons/files/rspack.svg
+SHA-256-Digest: xU47vcMc9PwJX5rmYS+sXV0srCveOfThEm2aod1rkN4=
+
+Name: assets/web/symbols-icons/icons/files/ruby.svg
+SHA-256-Digest: Tp2HjJFyNHpx43mGHrg+qu3Y/60PCqhqr8YpJOUFDr0=
+
+Name: assets/web/symbols-icons/icons/files/rust.svg
+SHA-256-Digest: BvYI4Q6tt3Y3PDOBLEfr7f5D09tc7qkdwwgOzc50uGc=
+
+Name: assets/web/symbols-icons/icons/files/sanity.svg
+SHA-256-Digest: uL/FY1Bih/7eIgnY8+1Qn2mabrOfWzLAXU1HlzVoiUg=
+
+Name: assets/web/symbols-icons/icons/files/sass.svg
+SHA-256-Digest: HJBNJO/Zwyd4VyigTZObWMTCnfLhkIsBeRXtQw7OqQA=
+
+Name: assets/web/symbols-icons/icons/files/sbt.svg
+SHA-256-Digest: oeEL+hNrofKFqjXgEI5IGS0HwjFwofIAu458x4I9Xe4=
+
+Name: assets/web/symbols-icons/icons/files/scala.svg
+SHA-256-Digest: PGv1WI+S84r4FG9FgZ0XGtjGqA7imKF1BnDFSA4wbs4=
+
+Name: assets/web/symbols-icons/icons/files/severless.svg
+SHA-256-Digest: NxKb24kSexumkcpWwj8/yad4XQWZcnYeOazQN6q8pW0=
+
+Name: assets/web/symbols-icons/icons/files/shell.svg
+SHA-256-Digest: AC3ik8Sk2xuI3dNHa1EB5CZx75PwmmaViuvlwUHh8iA=
+
+Name: assets/web/symbols-icons/icons/files/solidity.svg
+SHA-256-Digest: mwgYlf8VWHikCkbAP8ZxC3zb2/HfRaGVViJn3KpWj3c=
+
+Name: assets/web/symbols-icons/icons/files/starlark.svg
+SHA-256-Digest: ikV8FY2qvkd1eV3qpu1rChpQL5KxHzNdSpNpCFsgPOs=
+
+Name: assets/web/symbols-icons/icons/files/statamic-antlers.svg
+SHA-256-Digest: qvu7Ph5QRjuA4YGnzByBK9e0uVEXZ2LHhKpxVkcdXR0=
+
+Name: assets/web/symbols-icons/icons/files/storybook.svg
+SHA-256-Digest: PiNvnVgxQA56Qr9awItLjC++ly6K90dJCA73CzTAGIk=
+
+Name: assets/web/symbols-icons/icons/files/stylelint.svg
+SHA-256-Digest: 0Tuhr/nHaPfals6FsfHtgj+A9WG/lVmTTHdocpEnuM4=
+
+Name: assets/web/symbols-icons/icons/files/stylus.svg
+SHA-256-Digest: sfsDDQd18EVo56NA6rZBbhMFpjNs5C/94tRVZZw9s4A=
+
+Name: assets/web/symbols-icons/icons/files/supabase.svg
+SHA-256-Digest: MBYIN0yBWmmWqsODwZHIT2TMHo+YMrL070TSWbytBJY=
+
+Name: assets/web/symbols-icons/icons/files/svelte-ts.svg
+SHA-256-Digest: r2lpV+9y9u3eMb7udQomVcT/Ki4UrWn30v+74jcciq4=
+
+Name: assets/web/symbols-icons/icons/files/svelte.svg
+SHA-256-Digest: VgDEHRimLx7QNJTRe8pHdgijsUZ51oPzlQeccoDM8Os=
+
+Name: assets/web/symbols-icons/icons/files/svg.svg
+SHA-256-Digest: pJVBRkJp1no4xBd7sVimK8Rdrp6GuZLSPZQe9UWYJb4=
+
+Name: assets/web/symbols-icons/icons/files/svx.svg
+SHA-256-Digest: l5Z+woKkNq3IU1ZOEOrtyKFa0m9EgZxu4BJ8VKx0Bbg=
+
+Name: assets/web/symbols-icons/icons/files/swc.svg
+SHA-256-Digest: VPI61pv/0a8OZ2W3XzMeqj5WfmIQUJSwc7cduFF030Q=
+
+Name: assets/web/symbols-icons/icons/files/swift.svg
+SHA-256-Digest: 3Vxd/ywUeFWAF2TA1FldjXoemNp+7E4DVD2vmvDZFP4=
+
+Name: assets/web/symbols-icons/icons/files/tailwind.svg
+SHA-256-Digest: 9YX2LZePxeS0rJcWlzHQMJtxJylzF4+QFz6WTm/TGTM=
+
+Name: assets/web/symbols-icons/icons/files/terraform.svg
+SHA-256-Digest: mHkDhu0Bz+OU1K8fLEJe0VyM6W0UQCeCKpV0FjLHrjE=
+
+Name: assets/web/symbols-icons/icons/files/tex.svg
+SHA-256-Digest: MTUJyLLtfVvS+8/CaMIK9MgMpZFqG8bYMHjjmSEo2sg=
+
+Name: assets/web/symbols-icons/icons/files/text.svg
+SHA-256-Digest: fppxkJ+5bPJTpMNZIU46PRHZr72f4CQ9BC+5OP9fU3c=
+
+Name: assets/web/symbols-icons/icons/files/ts-test.svg
+SHA-256-Digest: nd31k6idkha+mJsaNNMrEVlnbwlfcL+JF010XzvBRPw=
+
+Name: assets/web/symbols-icons/icons/files/ts-types.svg
+SHA-256-Digest: +lFVfS1gcdfJSWCzA8pPdh4ZAt/hPpBMhpKB3TVtJLg=
+
+Name: assets/web/symbols-icons/icons/files/ts.svg
+SHA-256-Digest: 1nTsUitmmpzuM5puyQRFnw9SUdgEbvILoKIVx/PuaHE=
+
+Name: assets/web/symbols-icons/icons/files/tsconfig.svg
+SHA-256-Digest: fzUQXDeSKaEZcoOIGUNtgaACc2e+ejQGXnth3I2Hekc=
+
+Name: assets/web/symbols-icons/icons/files/turborepo.svg
+SHA-256-Digest: R8Y7879zgxdxeoKQqIIKC64zI+7dwEcgF0eE67F435E=
+
+Name: assets/web/symbols-icons/icons/files/twig.svg
+SHA-256-Digest: VNWpU3/DdofzoAgI8qPahX5TqjGmIQG/46U0cUb98aI=
+
+Name: assets/web/symbols-icons/icons/files/unocss.svg
+SHA-256-Digest: Co26DYEZphrXDPrxZd0hJAuUbP01BAb4M/vWfeQzBvs=
+
+Name: assets/web/symbols-icons/icons/files/v.svg
+SHA-256-Digest: 6FLo0LRvZpiD1xBH44VQIYFUzxZNqogqdP7qnKMZBbA=
+
+Name: assets/web/symbols-icons/icons/files/vanilla-extract.svg
+SHA-256-Digest: obEnaRuFGYS6vC0n+P9o+/BqdP34o1Ekc/DJWMg0mmg=
+
+Name: assets/web/symbols-icons/icons/files/vercel.svg
+SHA-256-Digest: Qwm4QM96SLKgdSQG03JGFr1LaW8EoYIM8AhmMVoSk9I=
+
+Name: assets/web/symbols-icons/icons/files/video.svg
+SHA-256-Digest: vu1pMSgoe+HjJgelRLhbX3yYZwYP0cUqwLToFIt5w60=
+
+Name: assets/web/symbols-icons/icons/files/visual-studio.svg
+SHA-256-Digest: oIZIRVvcakOvIjhxNInZt+PoYrRqmlKg4NUunsz0gTY=
+
+Name: assets/web/symbols-icons/icons/files/vite.svg
+SHA-256-Digest: kdrVCdKwFOOIB8gyPMTpv/0haivisfzZeU2+syDgNQY=
+
+Name: assets/web/symbols-icons/icons/files/vitest.svg
+SHA-256-Digest: u0mxN8u5HQ4A9ZeyvNhmhr05+gC+A6xfLfICJsrmJlw=
+
+Name: assets/web/symbols-icons/icons/files/vue.svg
+SHA-256-Digest: g48Ji8+RxaP9O3QfOlloUp81KI736oStIN/QIiZFy1w=
+
+Name: assets/web/symbols-icons/icons/files/webpack.svg
+SHA-256-Digest: L0GLX1Pd37dUqtigl4n4N/Jh+FF1E+PYx1VIrW5nHNg=
+
+Name: assets/web/symbols-icons/icons/files/xml.svg
+SHA-256-Digest: 7b0PAgnV+eOau9U8kXlqIS2bwbXNg3bS4l0g8npzkfE=
+
+Name: assets/web/symbols-icons/icons/files/yaml.svg
+SHA-256-Digest: V0Y71eGnBtK93jX694unNpyrtHQVwNMzkdoEJfN4neE=
+
+Name: assets/web/symbols-icons/icons/files/yarn.svg
+SHA-256-Digest: oRudCLo4herjrpqTGhVYWY9kv1kPs5Ee0lLIoB5a+Y4=
+
+Name: assets/web/symbols-icons/icons/files/zig.svg
+SHA-256-Digest: +jxoDfsQBa5MMQWIpA8FTCiJAa6GTB/D/bdzqJABGIc=
+
+Name: assets/web/symbols-icons/icons/folders/folder-actions.svg
+SHA-256-Digest: WgB5t5J3sATjuCJla0F48jVF5NHLGpQHUBRyxfObY54=
+
+Name: assets/web/symbols-icons/icons/folders/folder-android.svg
+SHA-256-Digest: IbV6tSIN1kptx8ueGMCCR7l42Zi14ijnH21a1zAXC54=
+
+Name: assets/web/symbols-icons/icons/folders/folder-angular.svg
+SHA-256-Digest: 1oSdgwuqd2+KgupouY3uvOjx+EH0zhoSuMCxGCzv3d4=
+
+Name: assets/web/symbols-icons/icons/folders/folder-app.svg
+SHA-256-Digest: f1G0snai5eywsxh6H4YPvgx0v1SKLImfPWVbpzCYfSs=
+
+Name: assets/web/symbols-icons/icons/folders/folder-assets.svg
+SHA-256-Digest: oQsogTQhzFgI6VIPs5yqwu9HIBqey4vEBAgeldfNCs8=
+
+Name: assets/web/symbols-icons/icons/folders/folder-auth.svg
+SHA-256-Digest: 0udmVzMCOPyM9lbqYE42/CUoaxeXgtD306a4iN8Dm6s=
+
+Name: assets/web/symbols-icons/icons/folders/folder-blue-code.svg
+SHA-256-Digest: mqjxhcray6FuaBOvzR3zddRpVD9VKZCubkI7bY0JHlU=
+
+Name: assets/web/symbols-icons/icons/folders/folder-blue-outline.svg
+SHA-256-Digest: becYM1TKFBefsvq0u2fxs5fBg8i3ifuuEaac7oJ4oKE=
+
+Name: assets/web/symbols-icons/icons/folders/folder-blue.svg
+SHA-256-Digest: matFVyoLeO0YbrFvN5b4o5UZMIH/v+RbG5pdaPswgI8=
+
+Name: assets/web/symbols-icons/icons/folders/folder-bruno.svg
+SHA-256-Digest: X5vRYmP9e3m1ySle3AoxUYRGkQDcXhgtum2/aZYkAfY=
+
+Name: assets/web/symbols-icons/icons/folders/folder-config.svg
+SHA-256-Digest: y47ltWsv2Z2B7NbkRJBkDJmHkwIa6COZrj/525dtb2Q=
+
+Name: assets/web/symbols-icons/icons/folders/folder-constants.svg
+SHA-256-Digest: FOfAQHmrmfOXaDaymFi+VP94EYgqVjWwr+OlWOidqgA=
+
+Name: assets/web/symbols-icons/icons/folders/folder-context.svg
+SHA-256-Digest: RtjW/4DAEP6ffwn7hXV4rVFLZqNu2YH/iCleoGiDgU0=
+
+Name: assets/web/symbols-icons/icons/folders/folder-core.svg
+SHA-256-Digest: deWT416+nUxRSDt3AxmURYVFsO1zPd7ztE4vVr/MsUE=
+
+Name: assets/web/symbols-icons/icons/folders/folder-database.svg
+SHA-256-Digest: 3O/hDMSXlPXJeNpqulJ6oik2t5LcOFxKIdqyhSTNXPU=
+
+Name: assets/web/symbols-icons/icons/folders/folder-drizzle.svg
+SHA-256-Digest: PSSm1/kPbzkIAcaE7h2yAC5EVL/nGVRdWCYXjcMlMbw=
+
+Name: assets/web/symbols-icons/icons/folders/folder-effects.svg
+SHA-256-Digest: FzjYHN+z0REL+kCEUNfG94bEk0w9/NwV59T/Sui92Fk=
+
+Name: assets/web/symbols-icons/icons/folders/folder-facade.svg
+SHA-256-Digest: J6hL1U+BMCrajm5TwjB3nFoDpp9floR6pPD9qvrLpOE=
+
+Name: assets/web/symbols-icons/icons/folders/folder-firebase.svg
+SHA-256-Digest: qgg1lhndFEy5CBCGjYZvRrzwnRbBqhWJGqo9w3dgAEg=
+
+Name: assets/web/symbols-icons/icons/folders/folder-github.svg
+SHA-256-Digest: Ks+Mvc5P6LHez8OEfuhD7x/gCieLdD2nNwDegXD7UNw=
+
+Name: assets/web/symbols-icons/icons/folders/folder-gitlab.svg
+SHA-256-Digest: 0aaQGi1/tnWZ9gzbEXgnK2DKmJLH4hpyHybB6MSQ+wA=
+
+Name: assets/web/symbols-icons/icons/folders/folder-graphql.svg
+SHA-256-Digest: iqtoaFx5rVjm675KzRVeC/ESvqbdFHBCV0iVm3gwJt0=
+
+Name: assets/web/symbols-icons/icons/folders/folder-gray-code.svg
+SHA-256-Digest: JAoKcPChQJHHSQh8Z0FKiznTXHc2+S3+WbeDVZCRF6I=
+
+Name: assets/web/symbols-icons/icons/folders/folder-gray-outline.svg
+SHA-256-Digest: bgx6vLcaoxiVvO9p+NQL/xXjiwqIg29/CRSSm1yQtXY=
+
+Name: assets/web/symbols-icons/icons/folders/folder-gray.svg
+SHA-256-Digest: xzxtjd40lXcq1DapVKBOVH5fMi3gFHAjZ+3kqST3LqU=
+
+Name: assets/web/symbols-icons/icons/folders/folder-green-code.svg
+SHA-256-Digest: mb4WI/NLn4eKyS4JoOwLf926169Ij3i5DamVMz4CBic=
+
+Name: assets/web/symbols-icons/icons/folders/folder-green-outline.svg
+SHA-256-Digest: pTF6B1tjVlqVxP0Sf89c8g+D0s/YZtCHK4eyx2VuqzI=
+
+Name: assets/web/symbols-icons/icons/folders/folder-green.svg
+SHA-256-Digest: w9zC2p7nFaVYl6Qrg0emO+DY7hwJeus5pPtfVLW//+U=
+
+Name: assets/web/symbols-icons/icons/folders/folder-helpers.svg
+SHA-256-Digest: MQg0div39g1YQOnN9cpo9i8RGLy0VyuF4NeDzZaJW58=
+
+Name: assets/web/symbols-icons/icons/folders/folder-hooks.svg
+SHA-256-Digest: JVfC+7cPBszz6YEQ4fGDwcrM/ALGLNg1US1cN3Hx6HQ=
+
+Name: assets/web/symbols-icons/icons/folders/folder-images.svg
+SHA-256-Digest: tyHwoz7i9yToY6LLA5frB6fbwX/ikfOrhAVTcJ4NyEw=
+
+Name: assets/web/symbols-icons/icons/folders/folder-interceptors.svg
+SHA-256-Digest: vUCCbBIRYsQPgYWKOiRb4z8BmD9AnOoMkLNKho8YWK8=
+
+Name: assets/web/symbols-icons/icons/folders/folder-interfaces.svg
+SHA-256-Digest: MB5ISU+Sl4K5aRl3j7mR1UKHmAqyT+lDFqYEdh8wCJY=
+
+Name: assets/web/symbols-icons/icons/folders/folder-ios.svg
+SHA-256-Digest: 28Q/V0wBIBw4INjt6qp17hMPzbkIftiX2oW4GeGhGUc=
+
+Name: assets/web/symbols-icons/icons/folders/folder-layout.svg
+SHA-256-Digest: nMp45KTW5Oe+jUDekneFC3N56FQhCW9IbGv1G6+SWiI=
+
+Name: assets/web/symbols-icons/icons/folders/folder-mail.svg
+SHA-256-Digest: O0zzMIF6sfquOpDlTcD0I3snkZLkxqNgB49ZdQoJSjE=
+
+Name: assets/web/symbols-icons/icons/folders/folder-middleware.svg
+SHA-256-Digest: JLvyjedzdCrXkOEtlZUM3/jPjqPYAwf+CMLc/sAtXuA=
+
+Name: assets/web/symbols-icons/icons/folders/folder-models.svg
+SHA-256-Digest: 21+TiSbM8BsUNw3ivfkchSoORZm2MmOXEWF7Y1ObK9o=
+
+Name: assets/web/symbols-icons/icons/folders/folder-modules.svg
+SHA-256-Digest: e7aDMFPgG2Is0WCurYk0THVqTaONnZbEf4JrwIw+tjw=
+
+Name: assets/web/symbols-icons/icons/folders/folder-mongo.svg
+SHA-256-Digest: /4Bu8GyPOqrljqYc28mDXYOn5Dobbv80j5cS8cJYRvI=
+
+Name: assets/web/symbols-icons/icons/folders/folder-open.svg
+SHA-256-Digest: HN5CHP9xy0CWmN4/5uDr2RAtuI1PVAM+MKq1Db1Z/Es=
+
+Name: assets/web/symbols-icons/icons/folders/folder-orange-code-1.svg
+SHA-256-Digest: bJL4ZVt9o5iKBThzgQD0XoW5KHk6k48XUHCEm7J9JBQ=
+
+Name: assets/web/symbols-icons/icons/folders/folder-orange-code-2.svg
+SHA-256-Digest: K80pQswt0j8RR3aQ8My+OOKr1L9CWGHKz/lgmk+ZjxQ=
+
+Name: assets/web/symbols-icons/icons/folders/folder-orange-code-3.svg
+SHA-256-Digest: Cdk0tBLSCo9tpXZZ5KLw9q/p+fQRYr+cU8RvSQ53Qwo=
+
+Name: assets/web/symbols-icons/icons/folders/folder-orange-code-4.svg
+SHA-256-Digest: fmd8AlzqYps6f2w5fwe+qg3rzDYoYHM+ePe13vueUXQ=
+
+Name: assets/web/symbols-icons/icons/folders/folder-orange-code.svg
+SHA-256-Digest: CSBh7NzMP/lsKTIynvgkzelTk3ppt84OLbm6fW79QEM=
+
+Name: assets/web/symbols-icons/icons/folders/folder-orange-outline.svg
+SHA-256-Digest: k3dzBheyIuoSoGr/niCeUs1TppDLPU+OwACoG2v5QPQ=
+
+Name: assets/web/symbols-icons/icons/folders/folder-orange.svg
+SHA-256-Digest: x1c4wQcFpgW5CimvHSeCUI7Wkc6qBTU5zOwkTuNg6Do=
+
+Name: assets/web/symbols-icons/icons/folders/folder-pink-code.svg
+SHA-256-Digest: V/+yA0opBXIfsk2TwOlm03OXc8oU9BFrbO+jREIoHJo=
+
+Name: assets/web/symbols-icons/icons/folders/folder-pink-outline.svg
+SHA-256-Digest: xFnsHCLyok8hHKGy+SLjVBJMsCxkuKpXyAtb4JrpiF0=
+
+Name: assets/web/symbols-icons/icons/folders/folder-pink.svg
+SHA-256-Digest: 1OefRC0CaefhJuCUubmG0xaR2tdNzZT5et13r5v3v00=
+
+Name: assets/web/symbols-icons/icons/folders/folder-pipes.svg
+SHA-256-Digest: ZkFoK9YohrRZEUBb5IAXg1BeMwJ5DEwwQCdydHjGICM=
+
+Name: assets/web/symbols-icons/icons/folders/folder-prisma.svg
+SHA-256-Digest: T6M/fzGdZMfi6plHuhISS6h/tJAt+k2XPZQEDbF2++k=
+
+Name: assets/web/symbols-icons/icons/folders/folder-providers.svg
+SHA-256-Digest: TaBnaEtv0VCTScGOiNTBdPxkFsEbVSTVkp7atotOdoA=
+
+Name: assets/web/symbols-icons/icons/folders/folder-purple-code.svg
+SHA-256-Digest: 37cR4bekug4D6TQxIaJyDxzzou2ImUuFO7jHJRS5ngg=
+
+Name: assets/web/symbols-icons/icons/folders/folder-purple-outline.svg
+SHA-256-Digest: 3QVgIQtk8Xx6DO4WU8G6cJXcYNdSYW+V8xShxZGPODc=
+
+Name: assets/web/symbols-icons/icons/folders/folder-purple.svg
+SHA-256-Digest: NVAnhJM3s29dRE1zhGSS/SomS92/4NLAJkYtMftgohI=
+
+Name: assets/web/symbols-icons/icons/folders/folder-red-code.svg
+SHA-256-Digest: DfjWvI+4EkwR35vqG+sfkE+WiBd5YekxlzBsk2iXqW8=
+
+Name: assets/web/symbols-icons/icons/folders/folder-red-outline.svg
+SHA-256-Digest: gJFpZ6is9Qxhm4DDbuRWqFaq2KRxGo4JiBX3YSD18OA=
+
+Name: assets/web/symbols-icons/icons/folders/folder-red.svg
+SHA-256-Digest: 4obkz9YReXvekjitzNHpACClChNASX814q+rq2f95gc=
+
+Name: assets/web/symbols-icons/icons/folders/folder-reducer.svg
+SHA-256-Digest: 3e8uhasPYTr6JwLhvsKMxKiH6RNOkQ5lccQ+kYKJbHo=
+
+Name: assets/web/symbols-icons/icons/folders/folder-router.svg
+SHA-256-Digest: EloSk53WFSzdzNfLs+9ecDSpTs/lfx1Gq5i7WMLvLWs=
+
+Name: assets/web/symbols-icons/icons/folders/folder-selector.svg
+SHA-256-Digest: hjoCqPUVkmQAtRkHkJLdmi5m/te9CClAw6TNjZGUEzA=
+
+Name: assets/web/symbols-icons/icons/folders/folder-services.svg
+SHA-256-Digest: 7l02Wh/4eS0KZ0HJIsl7vtfOsKANnB/N8Jbd6f7WDA0=
+
+Name: assets/web/symbols-icons/icons/folders/folder-shared.svg
+SHA-256-Digest: AAurDmvkzd5tNcD4K+RSHdKIBoPrUdtth5UVXScofwM=
+
+Name: assets/web/symbols-icons/icons/folders/folder-sky-code.svg
+SHA-256-Digest: troLpce54QVhD+ILAFyrHPRJaaNgK1ziguBSl2ftNDg=
+
+Name: assets/web/symbols-icons/icons/folders/folder-sky-outline.svg
+SHA-256-Digest: jGaGTpG8HcqhgsRTu9TRkCwhb3CztE7mwl3vNCmMmBA=
+
+Name: assets/web/symbols-icons/icons/folders/folder-sky.svg
+SHA-256-Digest: iTeFe50TruJ7tqrWGi5loH4rQUeiV6jIS3uKIGSFupY=
+
+Name: assets/web/symbols-icons/icons/folders/folder-src.svg
+SHA-256-Digest: fmd8AlzqYps6f2w5fwe+qg3rzDYoYHM+ePe13vueUXQ=
+
+Name: assets/web/symbols-icons/icons/folders/folder-supabase.svg
+SHA-256-Digest: aGnus85Ss9dfsiwmXq6OnUgelD/xxkkdflGLBgqLdZ4=
+
+Name: assets/web/symbols-icons/icons/folders/folder-target.svg
+SHA-256-Digest: VpN2PsgRE2yZKRkQVrj+bLSW6YgIlUCq8smfSN0pOU0=
+
+Name: assets/web/symbols-icons/icons/folders/folder-tina.svg
+SHA-256-Digest: dG04csHXf9J476U0qhC/DTuKKptpkCbYFeMvRqnQPDo=
+
+Name: assets/web/symbols-icons/icons/folders/folder-utils.svg
+SHA-256-Digest: Ha0r7KZws3rIaj6Ayt638rCxnazQMwISE1q8YwBzCR8=
+
+Name: assets/web/symbols-icons/icons/folders/folder-vercel.svg
+SHA-256-Digest: lulKDCQdRudXFKd2dIMKojqGZecu75q01MB1ZOF6STQ=
+
+Name: assets/web/symbols-icons/icons/folders/folder-yellow-code.svg
+SHA-256-Digest: pmrUi2n7bol6wmnEzl0cy85BEKSonmAW7+WpZH2ls34=
+
+Name: assets/web/symbols-icons/icons/folders/folder-yellow-outline.svg
+SHA-256-Digest: JbPa/WYGBwmWg5PorPMUY1089Ic87OiPHbQlG7barfc=
+
+Name: assets/web/symbols-icons/icons/folders/folder-yellow.svg
+SHA-256-Digest: QB2MhtSipInCVaUWwg70C2CMzzpUQBdX3l+4j6U4RaE=
+
+Name: assets/web/symbols-icons/icons/folders/folder.svg
+SHA-256-Digest: y6w+kmgizr0JfuY91r6c3p7zq01m3CgjUy9LB4x0wWE=
+
+Name: assets/web/symbols-icons/symbol-icon-theme.json
+SHA-256-Digest: aNei/0/shxBfz5/k1JD5qLrOUQiNx6whswlbjWsULKc=
+
+Name: assets/web/workers/pdf.min.mjs
+SHA-256-Digest: /pbBxuhTaUmZSNmSAOBfBwyFqEetrcTDRaVYi7iAUn0=
+
+Name: assets/web/workers/pdf.worker.mjs
+SHA-256-Digest: /29rP5StqdOYwcSPK1DOe4rerwFPOVrjLWxGOuKs16I=
+
+Name: assets/web/workers/pdfjs_loader.mjs
+SHA-256-Digest: qgjqRbIeVaUGGQVDX3guEJESHzGbybhm8aQ9V80aoZU=
+
+Name: classes.dex
+SHA-256-Digest: pcZvsnaKbTaqLx164qap8RyXB7j5PlbSo8yc1xXmqZg=
+
+Name: res/drawable-nodpi-v4/ic_launcher_logo.png
+SHA-256-Digest: 63v7fj0nwsb6ImrT23XQNlvlLwh3XLaOo4EuX70ai7U=
+
+Name: res/drawable-nodpi-v4/ic_notification.png
+SHA-256-Digest: 63v7fj0nwsb6ImrT23XQNlvlLwh3XLaOo4EuX70ai7U=
+
+Name: res/drawable-nodpi-v4/splash_logo.png
+SHA-256-Digest: 6Y4NAU6ouNM4KTMt+kgPg+y1z32fPGO4+ISk5zkUqVM=
+
+Name: res/drawable/ic_launcher_foreground.xml
+SHA-256-Digest: N1TzaVJUsfIsqvavn+B5VF8FHXt5HwQZo6civGDQ2k4=
+
+Name: res/drawable/splash_background.xml
+SHA-256-Digest: 45lN5DBcUhiRoIi3kXUM7WL5aA2q1TMrejPoCZ+t/DA=
+
+Name: res/drawable/splash_icon.xml
+SHA-256-Digest: jfGUJVk/RktCVnJT0denwLT4Rm0ukB9J1xyQxNiVkKo=
+
+Name: res/mipmap-anydpi-v21/ic_launcher_dark.xml
+SHA-256-Digest: jlYPTbpgsmy+YnvbmRhY1S1/Q521NZ5hUsWWATFp2us=
+
+Name: res/mipmap-anydpi-v21/ic_launcher_dark_round.xml
+SHA-256-Digest: jlYPTbpgsmy+YnvbmRhY1S1/Q521NZ5hUsWWATFp2us=
+
+Name: res/mipmap-anydpi-v21/ic_launcher_light.xml
+SHA-256-Digest: qF+b9b2N44VVDl5Jag/gDrVbTxisbGxSCBTPZ5a3IiQ=
+
+Name: res/mipmap-anydpi-v21/ic_launcher_light_round.xml
+SHA-256-Digest: qF+b9b2N44VVDl5Jag/gDrVbTxisbGxSCBTPZ5a3IiQ=
+
+Name: res/mipmap-anydpi-v26/ic_launcher.xml
+SHA-256-Digest: /zh/Ov49QKs4JwYf7Z2xU4Kzmfavo06hzqukCaRrnIM=
+
+Name: res/mipmap-anydpi-v26/ic_launcher_dark.xml
+SHA-256-Digest: wd8TsCIM9OvFNqLctj4UeLsNboUmx779Cc9+bJx32Js=
+
+Name: res/mipmap-anydpi-v26/ic_launcher_dark_round.xml
+SHA-256-Digest: wd8TsCIM9OvFNqLctj4UeLsNboUmx779Cc9+bJx32Js=
+
+Name: res/mipmap-anydpi-v26/ic_launcher_light.xml
+SHA-256-Digest: RwgoDKCtsUMOvuDgSbQwmUGNoM3PowU+EmW5jBY75X8=
+
+Name: res/mipmap-anydpi-v26/ic_launcher_light_round.xml
+SHA-256-Digest: RwgoDKCtsUMOvuDgSbQwmUGNoM3PowU+EmW5jBY75X8=
+
+Name: res/mipmap-anydpi-v26/ic_launcher_round.xml
+SHA-256-Digest: /zh/Ov49QKs4JwYf7Z2xU4Kzmfavo06hzqukCaRrnIM=
+
+Name: res/mipmap-hdpi-v4/ic_launcher.png
+SHA-256-Digest: 4Y4iAQ9D7tATI1VytxJoCSv6fjZ57jD3R2dQ6Hr4yzA=
+
+Name: res/mipmap-hdpi-v4/ic_launcher_round.png
+SHA-256-Digest: 4Y4iAQ9D7tATI1VytxJoCSv6fjZ57jD3R2dQ6Hr4yzA=
+
+Name: res/mipmap-mdpi-v4/ic_launcher.png
+SHA-256-Digest: l19wdlOQyvpWf/YzQE3AZQXaYmdgu8Fp8rH+dyC1+K8=
+
+Name: res/mipmap-mdpi-v4/ic_launcher_round.png
+SHA-256-Digest: l19wdlOQyvpWf/YzQE3AZQXaYmdgu8Fp8rH+dyC1+K8=
+
+Name: res/mipmap-xhdpi-v4/ic_launcher.png
+SHA-256-Digest: cxwrnMkn+UgW+z+T355d8q61NPEmam6zE/kw8T12G54=
+
+Name: res/mipmap-xhdpi-v4/ic_launcher_round.png
+SHA-256-Digest: cxwrnMkn+UgW+z+T355d8q61NPEmam6zE/kw8T12G54=
+
+Name: res/mipmap-xxhdpi-v4/ic_launcher.png
+SHA-256-Digest: o5KbXLCVkXEiVZGyk5jifrTABAzvIlQJpoxTifpES2o=
+
+Name: res/mipmap-xxhdpi-v4/ic_launcher_round.png
+SHA-256-Digest: o5KbXLCVkXEiVZGyk5jifrTABAzvIlQJpoxTifpES2o=
+
+Name: res/mipmap-xxxhdpi-v4/ic_launcher.png
+SHA-256-Digest: PJQqIwPsYFpwbFs9MP8G553VijiT8dTpIccOiDjJ3/o=
+
+Name: res/mipmap-xxxhdpi-v4/ic_launcher_round.png
+SHA-256-Digest: PJQqIwPsYFpwbFs9MP8G553VijiT8dTpIccOiDjJ3/o=
+
+Name: res/raw/agy_core_cert.pem
+SHA-256-Digest: LcKwiRWQuZn8bB1XYdCtPxySP8//0WlvusQUNMs52A0=
+
+Name: res/xml/network_security_config.xml
+SHA-256-Digest: KSTppYnmVKVUgjPNbx2LFnMstavLlBABYUgWSvm/KUE=
+
+Name: resources.arsc
+SHA-256-Digest: 70u/TCENlDKcBwmCGpkZ4Ya9mSdlkZHGqGpgMuUHhsI=
+

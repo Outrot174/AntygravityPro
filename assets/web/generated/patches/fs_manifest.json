@@ -1,0 +1,688 @@
+{
+  "/storage/emulated/0/Antigravity": [
+    {
+      "name": "3д модели",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "anty",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "anty_decompiled",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "заметки",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "песочница",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "программы",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "промты",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "утилиты",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "AGENTS.md",
+      "isDir": false,
+      "size": "14.7 KB"
+    },
+    {
+      "name": "FULL_BACKUP_POCO_F7_ULTRA.zip",
+      "isDir": false,
+      "size": "11061.7 MB"
+    },
+    {
+      "name": "README.md",
+      "isDir": false,
+      "size": "1.1 KB"
+    }
+  ],
+  "/storage/emulated/0/Antigravity/программы": [
+    {
+      "name": "Grafik",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "PDFQuantum",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "antigravity-ru",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "AntigravityPro_Parallel.apk",
+      "isDir": false,
+      "size": "236.4 MB"
+    },
+    {
+      "name": "AntigravityPro_Parallel.apk.idsig",
+      "isDir": false,
+      "size": "1.9 MB"
+    },
+    {
+      "name": "Grafik.apk",
+      "isDir": false,
+      "size": "873.1 KB"
+    },
+    {
+      "name": "Grafik.apk.idsig",
+      "isDir": false,
+      "size": "13.4 KB"
+    },
+    {
+      "name": "Grafik_BACKUP_2026-11-15.zip",
+      "isDir": false,
+      "size": "1.3 MB"
+    },
+    {
+      "name": "PdfQuantum.apk",
+      "isDir": false,
+      "size": "977.1 KB"
+    },
+    {
+      "name": "PdfQuantum.apk.idsig",
+      "isDir": false,
+      "size": "13.4 KB"
+    },
+    {
+      "name": "README.md",
+      "isDir": false,
+      "size": "100 B"
+    }
+  ],
+  "/storage/emulated/0/Antigravity/программы/Grafik": [
+    {
+      "name": ".git",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": ".github",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "app",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "gradle",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "scripts",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": ".gitignore",
+      "isDir": false,
+      "size": "129 B"
+    },
+    {
+      "name": "LICENSE",
+      "isDir": false,
+      "size": "1.0 KB"
+    },
+    {
+      "name": "README.md",
+      "isDir": false,
+      "size": "8.4 KB"
+    },
+    {
+      "name": "RELEASE_NOTES.md",
+      "isDir": false,
+      "size": "4.7 KB"
+    },
+    {
+      "name": "build.gradle",
+      "isDir": false,
+      "size": "309 B"
+    },
+    {
+      "name": "gradlew",
+      "isDir": false,
+      "size": "3.1 KB"
+    },
+    {
+      "name": "gradlew.bat",
+      "isDir": false,
+      "size": "2.5 KB"
+    },
+    {
+      "name": "settings.gradle",
+      "isDir": false,
+      "size": "529 B"
+    }
+  ],
+  "/storage/emulated/0/Antigravity/программы/PDFQuantum": [
+    {
+      "name": ".git",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": ".github",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "app",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "docs",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "gradle",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "scripts",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": ".gitignore",
+      "isDir": false,
+      "size": "253 B"
+    },
+    {
+      "name": "LICENSE",
+      "isDir": false,
+      "size": "1.0 KB"
+    },
+    {
+      "name": "README.md",
+      "isDir": false,
+      "size": "9.4 KB"
+    },
+    {
+      "name": "build.gradle",
+      "isDir": false,
+      "size": "309 B"
+    },
+    {
+      "name": "gradlew",
+      "isDir": false,
+      "size": "3.1 KB"
+    },
+    {
+      "name": "gradlew.bat",
+      "isDir": false,
+      "size": "2.5 KB"
+    },
+    {
+      "name": "settings.gradle",
+      "isDir": false,
+      "size": "534 B"
+    }
+  ],
+  "/storage/emulated/0/Antigravity/программы/antigravity-ru": [
+    {
+      "name": ".git",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "web",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": ".gitignore",
+      "isDir": false,
+      "size": "45 B"
+    },
+    {
+      "name": "README.md",
+      "isDir": false,
+      "size": "7.5 KB"
+    },
+    {
+      "name": "install.sh",
+      "isDir": false,
+      "size": "2.6 KB"
+    },
+    {
+      "name": "restore.sh",
+      "isDir": false,
+      "size": "1.3 KB"
+    }
+  ],
+  "/storage/emulated/0/Antigravity/3д модели": [
+    {
+      "name": "README.md",
+      "isDir": false,
+      "size": "85 B"
+    }
+  ],
+  "/storage/emulated/0/Antigravity/anty": [
+    {
+      "name": "META-INF",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "assets",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "res",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "AndroidManifest.xml",
+      "isDir": false,
+      "size": "8.1 KB"
+    },
+    {
+      "name": "classes.dex",
+      "isDir": false,
+      "size": "207.3 KB"
+    },
+    {
+      "name": "resources.arsc",
+      "isDir": false,
+      "size": "5.8 KB"
+    }
+  ],
+  "/storage/emulated/0/Antigravity/anty/res": [
+    {
+      "name": "drawable",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "drawable-nodpi-v4",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "mipmap-anydpi-v21",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "mipmap-anydpi-v26",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "mipmap-hdpi-v4",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "mipmap-mdpi-v4",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "mipmap-xhdpi-v4",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "mipmap-xxhdpi-v4",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "mipmap-xxxhdpi-v4",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "raw",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "xml",
+      "isDir": true,
+      "size": ""
+    }
+  ],
+  "/storage/emulated/0/Antigravity/anty/assets": [
+    {
+      "name": "env",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "runtime",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "web",
+      "isDir": true,
+      "size": ""
+    }
+  ],
+  "/storage/emulated/0/Antigravity/anty/META-INF": [
+    {
+      "name": "ANDROIDD.RSA",
+      "isDir": false,
+      "size": "1.2 KB"
+    },
+    {
+      "name": "ANDROIDD.SF",
+      "isDir": false,
+      "size": "46.4 KB"
+    },
+    {
+      "name": "MANIFEST.MF",
+      "isDir": false,
+      "size": "46.3 KB"
+    }
+  ],
+  "/storage/emulated/0/Antigravity/anty_decompiled": [
+    {
+      "name": "assets",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "build",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "original",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "res",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "smali",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "AndroidManifest.xml",
+      "isDir": false,
+      "size": "4.7 KB"
+    },
+    {
+      "name": "apktool.yml",
+      "isDir": false,
+      "size": "18.6 KB"
+    }
+  ],
+  "/storage/emulated/0/Antigravity/anty_decompiled/smali": [
+    {
+      "name": "com",
+      "isDir": true,
+      "size": ""
+    }
+  ],
+  "/storage/emulated/0/Antigravity/anty_decompiled/res": [
+    {
+      "name": "drawable",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "drawable-nodpi-v4",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "mipmap-anydpi-v21",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "mipmap-anydpi-v26",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "mipmap-hdpi-v4",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "mipmap-mdpi-v4",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "mipmap-xhdpi-v4",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "mipmap-xxhdpi-v4",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "mipmap-xxxhdpi-v4",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "raw",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "values",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "values-night-v31",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "values-night-v8",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "values-v31",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "xml",
+      "isDir": true,
+      "size": ""
+    }
+  ],
+  "/storage/emulated/0/Antigravity/anty_decompiled/original": [
+    {
+      "name": "META-INF",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "AndroidManifest.xml",
+      "isDir": false,
+      "size": "8.1 KB"
+    }
+  ],
+  "/storage/emulated/0/Antigravity/anty_decompiled/assets": [
+    {
+      "name": "env",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "runtime",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "web",
+      "isDir": true,
+      "size": ""
+    }
+  ],
+  "/storage/emulated/0/Antigravity/anty_decompiled/build": [
+    {
+      "name": "apk",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "resources.zip",
+      "isDir": false,
+      "size": "186.4 KB"
+    }
+  ],
+  "/storage/emulated/0/Antigravity/промты": [
+    {
+      "name": "MASTER_PROMPT_REALISM_V5.txt",
+      "isDir": false,
+      "size": "10.8 KB"
+    },
+    {
+      "name": "MASTER_PROMPT_V4_ONE_STORY_EXPANDING_UNIVERSE.txt",
+      "isDir": false,
+      "size": "45.4 KB"
+    },
+    {
+      "name": "MASTER_PROMPT_VEO_3_1_SCRIPT_V6.md",
+      "isDir": false,
+      "size": "23.8 KB"
+    },
+    {
+      "name": "README.md",
+      "isDir": false,
+      "size": "589 B"
+    },
+    {
+      "name": "STUDIO_ORCHESTRATOR_PIPELINE.md",
+      "isDir": false,
+      "size": "31.0 KB"
+    },
+    {
+      "name": "master.txt",
+      "isDir": false,
+      "size": "9.9 KB"
+    },
+    {
+      "name": "subagent_graphics_engine_specialist.md",
+      "isDir": false,
+      "size": "6.6 KB"
+    }
+  ],
+  "/storage/emulated/0/Antigravity/заметки": [
+    {
+      "name": "README.md",
+      "isDir": false,
+      "size": "223 B"
+    },
+    {
+      "name": "top_github_repositories.md",
+      "isDir": false,
+      "size": "3.9 KB"
+    },
+    {
+      "name": "ИНСТРУКЦИЯ_РУТИРОВАНИЕ_POCO_F7_ULTRA.md",
+      "isDir": false,
+      "size": "7.3 KB"
+    },
+    {
+      "name": "Субагенты_и_функции.txt",
+      "isDir": false,
+      "size": "5.7 KB"
+    },
+    {
+      "name": "генераторы_google_ai.md",
+      "isDir": false,
+      "size": "2.4 KB"
+    }
+  ],
+  "/storage/emulated/0/Antigravity/песочница": [],
+  "/storage/emulated/0/Antigravity/утилиты": [
+    {
+      "name": "Root",
+      "isDir": true,
+      "size": ""
+    },
+    {
+      "name": "README.md",
+      "isDir": false,
+      "size": "319 B"
+    }
+  ],
+  "/storage/emulated/0/Antigravity/утилиты/Root": [
+    {
+      "name": "APatch_11282_e8e4651_HEAD-release-signed.apk",
+      "isDir": false,
+      "size": "6.4 MB"
+    },
+    {
+      "name": "KernelSU_Next_v3.4.2.apk",
+      "isDir": false,
+      "size": "15.9 MB"
+    },
+    {
+      "name": "Magisk-v28.1.apk",
+      "isDir": false,
+      "size": "11.2 MB"
+    },
+    {
+      "name": "README.md",
+      "isDir": false,
+      "size": "7.3 KB"
+    },
+    {
+      "name": "flash_root.bat",
+      "isDir": false,
+      "size": "1.6 KB"
+    },
+    {
+      "name": "flash_root.sh",
+      "isDir": false,
+      "size": "2.5 KB"
+    },
+    {
+      "name": "init_boot.img",
+      "isDir": false,
+      "size": "8.0 MB"
+    }
+  ]
+}
