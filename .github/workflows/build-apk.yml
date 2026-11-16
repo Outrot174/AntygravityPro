@@ -29,13 +29,13 @@ jobs:
       - name: Install Android Build Tools & Apktool
         run: |
           sudo apt-get update
-          sudo apt-get install -y zipalign android-sdk-build-tools wget gzip
+          sudo apt-get install -y zipalign android-sdk-build-tools curl gzip
           
-          # Install Apktool wrapper and JAR
+          # Install Apktool wrapper and JAR from official GitHub Releases
           echo "Installing Apktool..."
-          sudo wget -q https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool -O /usr/local/bin/apktool
+          sudo curl -sSL https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool -o /usr/local/bin/apktool
           sudo chmod +x /usr/local/bin/apktool
-          sudo wget -q https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.10.0.jar -O /usr/local/bin/apktool.jar
+          sudo curl -sSL https://github.com/iBotPeaches/Apktool/releases/download/v2.10.0/apktool_2.10.0.jar -o /usr/local/bin/apktool.jar
           sudo chmod +x /usr/local/bin/apktool.jar
           apktool -version
 
