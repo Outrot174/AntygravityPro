@@ -138,7 +138,6 @@
           return b.readFile(filePath);
         } catch (e) {}
       }
-
       return this.exec(`cat "${filePath}" 2>/dev/null`);
     }
 
@@ -161,6 +160,116 @@
       const res = await this.exec(`cat << 'AGY_EOF' > "${filePath}"\n${content}\nAGY_EOF`);
       return !res.includes('Error');
     }
+
+    /**
+     * Creates directory on Android storage
+     * @param {string} dirPath
+     * @returns {Promise<boolean>}
+     */
+    async createFolder(dirPath) {
+      if (!dirPath) return false;
+      const res = await this.exec(`mkdir -p "${dirPath}" 2>&1`);
+      return !res || !res.toLowerCase().includes('error');
+    }
+
+    /**
+     * Creates a new file
+     * @param {string} filePath
+     * @param {string} content
+     * @returns {Promise<boolean>}
+     */
+    async createFile(filePath, content = '') {
+      return this.writeFile(filePath, content);
+    }
+
+    /**
+     * Deletes a file or directory
+     * @param {string} targetPath
+     * @returns {Promise<boolean>}
+     */
+    async deleteItem(targetPath) {
+      if (!targetPath || targetPath === '/' || targetPath === '/storage/emulated/0') return false;
+      const res = await this.exec(`rm -rf "${targetPath}" 2>&1`);
+      return !res || !res.toLowerCase().includes('error');
+    }
+
+    /**
+     * Renames or moves a file/folder
+     * @param {string} oldPath
+     * @param {string} newPath
+     * @returns {Promise<boolean>}
+     */
+    async renameItem(oldPath, newPath) {
+      if (!oldPath || !newPath) return false;
+      const res = await this.exec(`mv "${oldPath}" "${newPath}" 2>&1`);
+      return !res || !res.toLowerCase().includes('error');
+    }
+
+    /**
+     * Copies a file or directory
+     * @param {string} srcPath
+     * @param {string} dstPath
+     * @returns {Promise<boolean>}
+     */
+    async copyItem(srcPath, dstPath) {
+      if (!srcPath || !dstPath) return false;
+      const res = await this.exec(`cp -rf "${srcPath}" "${dstPath}" 2>&1`);
+      return !res || !res.toLowerCase().includes('error');
+    }
+
+    /**
+     * Moves a file or directory
+     * @param {string} srcPath
+     * @param {string} dstPath
+     * @returns {Promise<boolean>}
+     */
+    async moveItem(srcPath, dstPath) {
+      return this.renameItem(srcPath, dstPath);
+    }
+
+    /**
+     * Opens a file in external Android application using VIEW intent
+     * @param {string} filePath
+     * @returns {Promise<string>}
+     */
+    async openFileExternal(filePath) {
+      if (!filePath) return '';
+      const ext = (filePath.split('.').pop() || '').toLowerCase();
+      let mime = '*/*';
+      if (['jpg', 'jpeg', 'png', 'webp', 'gif', 'bmp', 'svg'].includes(ext)) mime = 'image/*';
+      else if (['mp4', 'mkv', 'webm', 'avi', 'mov'].includes(ext)) mime = 'video/*';
+      else if (['mp3', 'wav', 'ogg', 'm4a', 'flac'].includes(ext)) mime = 'audio/*';
+      else if (ext === 'pdf') mime = 'application/pdf';
+      else if (['txt', 'log', 'json', 'py', 'js', 'sh', 'md', 'html', 'css', 'xml'].includes(ext)) mime = 'text/plain';
+      else if (ext === 'apk') mime = 'application/vnd.android.package-archive';
+
+      // Execute Android Intent
+      return this.exec(`am start -a android.intent.action.VIEW -d "file://${filePath}" -t "${mime}" 2>&1`);
+    }
+
+    /**
+     * Gets file statistics (size, timestamp, permissions)
+     * @param {string} filePath
+     * @returns {Promise<Object>}
+     */
+    async getFileStats(filePath) {
+      if (!filePath) return null;
+      try {
+        const out = await this.exec(`stat -c "%s|%Y|%a|%F" "${filePath}" 2>/dev/null`);
+        if (out && out.includes('|')) {
+          const [size, mtime, perms, type] = out.trim().split('|');
+          return {
+            sizeBytes: parseInt(size, 10) || 0,
+            lastModified: (parseInt(mtime, 10) || 0) * 1000,
+            permissions: perms || '644',
+            isDir: type.toLowerCase().includes('directory'),
+            typeStr: type || 'file'
+          };
+        }
+      } catch (_) {}
+      return null;
+    }
+
 
     /**
      * Gets real core engine port
